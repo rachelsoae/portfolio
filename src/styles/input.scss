@@ -1,0 +1,80 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+* {
+  // border: 1px solid red;
+}
+
+html,
+body,
+.root,
+.page {
+  margin: 0;
+  min-height: 100vh;
+}
+
+html {
+  background: linear-gradient(180deg, #D4A29C 0%, #EDCC8B 50%, #B6D8D3 100%);
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 95px;
+  margin: 1rem 0;
+  align-self: center;
+}
+
+button {
+  font-family: 'Amaranth', sans-serif;
+}
+
+p {
+  font-family: 'Spinnaker', sans-serif;
+  margin: 0;
+}
+
+button,
+p {
+  font-size: 30px;
+}
+
+h1,
+button,
+p {
+  color: v.$text-color;
+  text-shadow: v.$shadow;
+}
+
+.landing {
+  width: 100%;
+  display: flex;
+  @include m.true-center;
+}
+
+.landing__box {
+  width: 75%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  @include m.true-center;
+  background: url('../flowers-bw-op.png');
+  // box-shadow: v.$shadow;
+  border-radius: 10px;
+}
+
+.landing__text {
+  width: 85%;
+}
+
+button {
+  border-radius: 2px;
+  border: 1px solid #FFF;
+  background: rgba(217, 217, 217, 0.00);
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  width: 250px;
+}
+
+button:hover {
+  background-color: #E4845B;
+}
