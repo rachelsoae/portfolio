@@ -52,7 +52,7 @@ p {
 
 .landing__box {
   width: 75%;
-  height: 75vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,6 +88,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  backdrop-filter: blur(5px);
 }
 
 .nav__text {
