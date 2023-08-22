@@ -8,13 +8,17 @@ body,
 
 html {
   background: linear-gradient(180deg, #D4A29C 0%, #EDCC8B 50%, #B6D8D3 100%);
+  font-size: 62.5%;
 }
 
-h1 {
-  font-family: "Philosopher", sans-serif;
-  font-size: 95px;
+h2 {
+  font-size: 9.5rem;
   margin: 1rem 0;
   align-self: center;
+}
+
+h1, h2 {
+  font-family: "Philosopher", sans-serif;
 }
 
 button {
@@ -28,10 +32,11 @@ p {
 
 button,
 p {
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 h1,
+h2,
 button,
 p {
   color: white;
@@ -61,16 +66,42 @@ p {
 }
 
 button {
-  border-radius: 2px;
-  border: 1px solid #FFF;
   background: rgba(217, 217, 217, 0);
   padding: 0.5em 1em;
+}
+
+.landing__button {
+  border-radius: 2px;
+  border: 1px solid #FFF;
   margin-top: 1em;
   width: 250px;
 }
 
-button:hover {
+.landing__button:hover {
   background-color: #E4845B;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  background-color: rgba(248, 249, 250, 0.2);
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__text {
+  font-size: 2.2rem;
+}
+
+.nav__header,
+.nav__buttons {
+  padding: 0 3rem;
+}
+
+.nav__button {
+  border: none;
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=output.css.map */
