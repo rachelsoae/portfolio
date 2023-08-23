@@ -4,15 +4,15 @@ function App() {
   return (
     <>
       <Landing />
-      <div className='page'>
+      {/* <div className='page projects'>
 
       </div>
-      <div className='page'>
+      <div className='page about'>
 
       </div>
-      <div className='page'>
+      <div className='page contact'>
 
-      </div>
+      </div> */}
     </>
     
   )
