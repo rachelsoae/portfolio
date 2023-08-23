@@ -1,0 +1,26 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+nav {
+  display: flex;
+  position: fixed;
+  background-color: #F8F9FA33;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  backdrop-filter: blur(5px)
+}
+
+.nav__text {
+  font-size: 2.2rem;
+}
+
+.nav__header,
+.nav__buttons {
+  padding: 0 3rem;
+}
+
+.nav__button {
+  border: none;
+  padding: 2rem;
+}
