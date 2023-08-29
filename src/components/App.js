@@ -1,21 +1,11 @@
-import Nav from './Nav'
-import Landing from './Landing'
-import Projects from './Projects'
-import About from './About'
-import Contact from './Contact'
-import Footer from './Footer'
+import Home from './Home'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <Nav />
-      <Landing />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
-    </>
-    
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
   )
 }
 

@@ -2,7 +2,7 @@ import headshot from '../assets/headshot.jpg'
 
 const Landing = () => {
   return (
-    <div className='page landing'>
+    <div id='landing' className='page landing'>
       <section className='page__box'>
         <div className='landing__text'>
           <p>Hi, my name is</p>
