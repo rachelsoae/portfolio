@@ -21,7 +21,7 @@ html {
 }
 
 h1, h2 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: v.$header-font;
 }
 
 h2 {
@@ -32,6 +32,7 @@ h2 {
 
 h1,
 h2,
+h3,
 button,
 p {
   color: v.$text-color;
@@ -39,11 +40,11 @@ p {
 }
 
 button {
-  font-family: 'Amaranth', sans-serif;
+  font-family: v.$button-font;
 }
 
 p {
-  font-family: 'Spinnaker', sans-serif;
+  font-family: v.$body-font;
   margin: 0;
 }
 
@@ -67,10 +68,11 @@ button {
   height: 60vh;
   display: flex;
   @include m.true-center;
-  background-color: #A2636040;
+  background-color: v.$content-box;
 }
 
-.page__header {
-  
+h3 {
+  font-family: v.$header-font;
+  font-size: 4rem;
 }
 
