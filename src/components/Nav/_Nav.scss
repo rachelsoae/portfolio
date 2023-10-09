@@ -3,28 +3,20 @@
 
 nav {
   display: flex;
-  position: fixed;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: $primary-background-color;
+
+  #logo {
+    object-fit: cover;
+    width: 23rem;
+    margin: 0;
+  }
 }
 
-.nav__text {
-  font-size: 2.2rem;
-}
-
-.nav__header,
-.nav__button,
-.nav__button:visited {
-  text-decoration: none;
-}
-
-
-.nav__header,
-.nav__buttons {
-  padding: 0 3rem;
-}
-
-.nav__button {
+a {
   @include button;
+  text-decoration: none;
+  padding: 0 3rem;
 }

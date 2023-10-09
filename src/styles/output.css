@@ -12,30 +12,23 @@ html {
 
 nav {
   display: flex;
-  position: fixed;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  background-color: #F5F5F5;
+}
+nav #logo {
+  object-fit: cover;
+  width: 23rem;
+  margin: 0;
 }
 
-.nav__text {
-  font-size: 2.2rem;
-}
-
-.nav__header,
-.nav__button,
-.nav__button:visited {
-  text-decoration: none;
-}
-
-.nav__header,
-.nav__buttons {
-  padding: 0 3rem;
-}
-
-.nav__button {
+a {
   font-family: "Nunito Sans", sans-serif;
-  padding: 0.5em 1em;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0 3rem;
 }
 
 /*# sourceMappingURL=output.css.map */
