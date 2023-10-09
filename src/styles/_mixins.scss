@@ -1,4 +1,12 @@
+@use 'variables' as v;
+
 @mixin true-center {
   justify-content: center;
   align-items: center;
+}
+
+@mixin button {
+  font-family: v.$button-font;
+  background: 0%;
+  padding: 0.5em 1em;
 }

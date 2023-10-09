@@ -1,19 +1,17 @@
-import headshot from '../assets/headshot.jpg'
-
-const Landing = () => {
+const Home = () => {
   return (
     <div id='landing' className='page landing'>
       <section className='page__box'>
         <div className='landing__text'>
-          <p>Hi, my name is</p>
+          <h3 className='landing__header'>Hello and welcome to SoaeSpace! 🌻</h3>
+          <p>My name is</p>
           <h2>Rachel Soae Prather</h2>
           <p>I’m a Software Developer specializing in front end technologies including React, JavaScript, and Sass</p>
           <button className='landing__button'>View My Work</button>
         </div>
-        <img className='landing__img' src={headshot} />
       </section>
     </div>
   )
 }
 
-export default Landing;
+export default Home;

@@ -1,78 +1,8 @@
-@use 'variables' as v;
-@use 'mixins' as m;
-@use 'landing';
-@use 'nav';
-
-* {
-  // border: 1px solid red;
-}
-
-html,
-body,
-.root,
-.page {
-  margin: 0;
-  min-height: 100vh;
-}
-
-html {
-  background: linear-gradient(180deg, #D4A29C 0%, #EDCC8B 50%, #B6D8D3 100%);
-  font-size: 62.5%;
-}
-
-h1, h2 {
-  font-family: v.$header-font;
-}
-
-h2 {
-  font-size: 8rem;
-  margin: 1rem 0;
-  align-self: center;
-}
-
-h1,
-h2,
-h3,
-button,
-p {
-  color: v.$text-color;
-  text-shadow: v.$shadow;
-}
-
-button {
-  font-family: v.$button-font;
-}
-
-p {
-  font-family: v.$body-font;
-  margin: 0;
-}
-
-button,
-p {
-  font-size: 3rem;
-}
-
-button {
-  background: 0%;
-  padding: 0.5em 1em;
-}
-
-.page {
-  height: 100%;
-  width: 100%;
-}
-
-.page__box {
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  @include m.true-center;
-  background-color: v.$content-box;
-}
-
-h3 {
-  font-family: v.$header-font;
-  font-size: 4rem;
-}
-
+@use './variables' as *;
+@use './mixins' as *;
+@use '../components/About/About';
+@use '../components/App/App';
+@use '../components/Contact/Contact';
+@use '../components/Home/Home';
+@use '../components/Nav/Nav';
+@use '../components/Portfolio/Portfolio';

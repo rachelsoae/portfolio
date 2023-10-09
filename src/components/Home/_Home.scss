@@ -2,7 +2,6 @@
 @use 'mixins' as m;
 
 .landing {
-  width: 100%;
   display: flex;
   @include m.true-center;
 }
@@ -17,6 +16,7 @@
 }
 
 .landing__button {
+  @include m.button;
   border-radius: 2px;
   border: 1px solid #FFF;
   margin-top: 1em;
