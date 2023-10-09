@@ -1,4 +1,13 @@
+@use 'variables' as *;
+
 @mixin true-center {
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin button {
+  font-family: $button-font;
+  font-size: 1.25rem;
+  font-weight: 700;
 }

@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $primary-background-color;
+
+  #logo {
+    object-fit: cover;
+    width: 23rem;
+    margin: 0;
+  }
+}
+
+a {
+  @include button;
+  text-decoration: none;
+  padding: 0 3rem;
+}

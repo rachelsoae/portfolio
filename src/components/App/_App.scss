@@ -1,0 +1,18 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+* {
+  // border: 1px solid red;
+}
+
+html,
+body,
+.root,
+.page {
+  margin: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+}
