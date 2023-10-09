@@ -1,16 +1,22 @@
+import placeholder from '../../assets/flowers-bw-op.png'
+
 const Home = () => {
   return (
-    <div id='landing' className='page landing'>
-      <section className='page__box'>
-        <div className='landing__text'>
-          <h3 className='landing__header'>Hello and welcome to SoaeSpace! 🌻</h3>
-          <p>My name is</p>
-          <h2>Rachel Soae Prather</h2>
-          <p>I’m a Software Developer specializing in front end technologies including React, JavaScript, and Sass</p>
-          <button className='landing__button'>View My Work</button>
+    <>
+      <section>
+        <div>
+          <h2>Software Engineer | Web Developer</h2>
+          <p>Building community through technology. Let’s create something together.</p>
+          <div>
+            <button>Contact Me</button>
+            <button>View My Work</button>
+          </div>
         </div>
       </section>
-    </div>
+      <section>
+        <img src={placeholder} alt='this image should be replaced' />
+      </section>
+    </>
   )
 }
 

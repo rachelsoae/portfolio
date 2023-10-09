@@ -1,18 +1,12 @@
-@use 'variables' as v;
-@use 'mixins' as m;
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
 
 nav {
   display: flex;
   position: fixed;
-  background-color: v.$content-box;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  backdrop-filter: blur(5px)
-}
-
-h1 {
-  font-size: 2.6rem;
 }
 
 .nav__text {
@@ -32,5 +26,5 @@ h1 {
 }
 
 .nav__button {
-  @include m.button;
+  @include button;
 }
