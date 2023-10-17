@@ -9,11 +9,10 @@ const Nav = () => {
           <img src={logo} id='logo' alt='Rachel Soae, Software Engineer' />
         </Link>
       </h1>
-      
       <div className='nav__buttons'>
-        <Link to='/about'>ABOUT</Link>
-        <Link to='/portfolio'>PORTFOLIO</Link>
-        <Link to='/contact'>CONTACT</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/portfolio'>Portfolio</Link>
+        <Link to='/contact' className='primary-button'>Contact Me</Link>
       </div>
     </nav>
   )

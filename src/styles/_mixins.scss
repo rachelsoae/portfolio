@@ -6,8 +6,39 @@
   align-items: center;
 }
 
-@mixin button {
+@mixin button-text {
   font-family: $button-font;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+@mixin button-box {
+  width: 15.75rem;
+  height: 5.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid $primary-accent-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin button-style-primary {
+  background-color: $primary-accent-color;
+  color: $secondary-text-color;
+}
+
+@mixin button-style-secondary {
+  color: $primary-accent-color;
+}
+
+@mixin header-font {
+  font-family: $header-font;
+  color: $primary-text-color;
+  font-size: 36px;
+}
+
+@mixin body-font {
+  font-family: $body-font;
+  color: $primary-text-color;
+  font-size: 24px;
 }

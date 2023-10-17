@@ -1,3 +1,41 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
+* {
+  border: 1px solid $primary-accent-color;
+}
+
+.hero-section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  width: 100%;
+  .hero-text-container {
+    @include true-center;
+    height: 100%;
+    width: 60%;
+    margin: 0 5rem;
+    h2 {
+      @include header-font;
+    }
+    p {
+      @include body-font;
+      margin: 0;
+    }
+    .buttons-container {
+      display: flex;
+      align-items: center;
+      margin: 3rem 0;
+      button {
+        margin-right: 2rem;
+      }
+    }
+  }
+  .hero-image {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
