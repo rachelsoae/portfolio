@@ -19,13 +19,11 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <section className='content-image-container'> */}
-        <img 
-          src={placeholder} 
-          alt='this image should be replaced'
-          className='hero-image'
-        />
-      {/* </section> */}
+      <img 
+        src={placeholder} 
+        alt='this image should be replaced'
+        className='hero-image'
+      />
     </div>
   )
 }

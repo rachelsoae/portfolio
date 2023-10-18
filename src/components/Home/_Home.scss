@@ -1,15 +1,10 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-* {
-  // border: 1px solid $primary-accent-color;
-}
-
 .hero-section {
   height: 80vh;
   display: flex;
   align-items: center;
-  // justify-content: space-between;
   width: 100%;
   .hero-text-container {
     @include true-center;
