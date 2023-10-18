@@ -29,11 +29,27 @@ button {
   color: #F5F5F5;
 }
 
+button:hover {
+  animation: button-fade 0.5s;
+  background-color: #A3CBA5;
+  border: none;
+  color: #183C19;
+  animation: button-fade 1s;
+}
+
 a:hover,
 button:hover {
   cursor: pointer;
 }
 
+@keyframes button-fade {
+  to {
+    background-color: #A3CBA5;
+    border: none;
+    color: #183C19;
+    animation: button-fade 1s;
+  }
+}
 .hero-section {
   height: 80vh;
   display: flex;

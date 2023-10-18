@@ -23,7 +23,18 @@ button {
   @include button-style-primary;
 }
 
+button:hover {
+  animation: button-fade 0.5s;
+  @include button-hover;
+}
+
 a:hover,
 button:hover {
   cursor: pointer;
+}
+
+@keyframes button-fade {
+  to {
+    @include button-hover;
+  }
 }
