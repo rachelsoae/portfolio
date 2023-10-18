@@ -1,4 +1,5 @@
 import placeholder from '../../assets/flowers-bw-op.png'
+import {Link} from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -9,8 +10,12 @@ const Home = () => {
           <p>Building community through technology.</p>
           <p>Let’s create something together.</p>
           <div className='buttons-container'>
-            <button className='primary-button'>Contact Me</button>
-            <button className='secondary-button'>View My Work</button>
+            <Link to='/contact'>
+              <button className='primary-button'>Contact Me</button>
+            </Link>
+            <Link to='/portfolio'>
+              <button className='secondary-button'>View My Work</button>
+            </Link>
           </div>
         </div>
       </section>

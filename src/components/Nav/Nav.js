@@ -10,6 +10,7 @@ const Nav = () => {
         </Link>
       </h1>
       <div className='nav__buttons'>
+        <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
         <Link to='/portfolio'>Portfolio</Link>
         <Link to='/contact'>

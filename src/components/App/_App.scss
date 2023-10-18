@@ -22,3 +22,8 @@ button {
 .primary-button {
   @include button-style-primary;
 }
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
