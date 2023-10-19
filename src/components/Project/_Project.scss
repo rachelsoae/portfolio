@@ -6,13 +6,13 @@ article {
   height: 40rem;
   margin: 3rem;
   border: 1.2rem $secondary-accent-color solid;
+  box-shadow: $box-shadow;
   @include center-column;
   h3 {
     @include button-text;
   }
   p {
     @include body-font;
-    font-size: 3rem;
     width: 80%;
   }
   .tech {
