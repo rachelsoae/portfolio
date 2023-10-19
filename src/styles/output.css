@@ -123,10 +123,6 @@ nav .nav__buttons a:active {
   text-decoration: none;
 }
 
-* {
-  border: 1px solid #A3CBA5;
-}
-
 .projects-section {
   height: 100%;
   display: flex;
@@ -137,6 +133,68 @@ nav .nav__buttons a:active {
   font-family: "Offside", sans-serif;
   color: #424242;
   font-size: 36px;
+}
+.projects-section p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.projects-section .projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 4rem;
+  text-align: center;
+}
+
+article {
+  width: 45rem;
+  height: 40rem;
+  margin: 3rem;
+  border: 1.2rem #A3CBA5 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+article p {
+  font-family: "Ubuntu", sans-serif;
+  color: #424242;
+  font-size: 24px;
+  font-size: 3rem;
+  width: 80%;
+}
+article .tech {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+article .tech-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+}
+article .tech-icon-container img {
+  height: 4rem;
+  margin: 0.5rem;
+}
+article .tech-icon-container p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=output.css.map */

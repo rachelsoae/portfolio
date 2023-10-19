@@ -2,15 +2,24 @@
 @use '../../styles/mixins' as *;
 
 * {
-  border: 1px solid $secondary-accent-color;
+  // border: 1px solid $secondary-accent-color;
 }
 
 .projects-section {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include center-column;
   h2 {
     @include header-font;
+  }
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 4rem;
+    text-align: center;
   }
 }
