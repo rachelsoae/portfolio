@@ -36,6 +36,7 @@ const Project = ({project}) => {
     <>
     {!isActive ? 
       <article
+        className='project-preview'
         id={id} 
         onClick={toggleActiveState}
         style={{
@@ -45,7 +46,11 @@ const Project = ({project}) => {
       >
       </article>
       :
-      <article id={id} onClick={toggleActiveState} className='project-detail'> 
+      <article 
+        className='project-detail'
+        id={id} 
+        onClick={toggleActiveState} 
+      > 
         <h3>{name}</h3>
         <p>{tagline}</p>
         <div className='tech'>

@@ -9,6 +9,7 @@ article {
   box-shadow: $box-shadow;
   position: relative;
   @include center-column;
+  transition: transform 0.25s ease-in-out;
   .project-preview {
     height: 45rem;
     background-size: cover;
@@ -60,4 +61,16 @@ article {
 
 .project-detail {
   border: 1.2rem $secondary-accent-color solid;
+
 }
+
+.project-detail:hover {
+  transform: scale(1.1);
+}
+
+.project-preview:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.25s ease-in-out;
+}
+
