@@ -2,13 +2,17 @@
 @use '../../styles/mixins' as *;
 
 article {
+  border: none;
   width: 50rem;
   height: 45rem;
   margin: 3rem;
-  border: 1.2rem $secondary-accent-color solid;
   box-shadow: $box-shadow;
   position: relative;
   @include center-column;
+  .project-preview {
+    height: 45rem;
+    background-size: cover;
+  }
   h3 {
     @include button-text;
     margin-top: 2.5rem;
@@ -52,4 +56,8 @@ article {
       margin-top: 2rem;
     }
   }
+}
+
+.project-detail {
+  border: 1.2rem $secondary-accent-color solid;
 }

@@ -1,4 +1,7 @@
 import Project from '../Project/Project'
+import dndpreview from '../../assets/dndpreview.png';
+import everusepreview from '../../assets/everusepreview.png';
+import humormepreview from '../../assets/humormepreview.png';
 
 const Portfolio = () => {
   const PROJECTS = [
@@ -8,7 +11,8 @@ const Portfolio = () => {
       tagline: 'This product-focused e-commerce app was built on behalf of the small sustainability business EverUse Upcycled Products.',
       techs: ['React', 'JavaScript', 'Sass', 'Cypress', 'GraphQL', 'GitHub Actions'],
       repoLink: 'https://github.com/JamieCaudill/EverUse-FE-Vercel',
-      deployedLink: 'https://everuse-fe.vercel.app'
+      deployedLink: 'https://everuse-fe.vercel.app',
+      img: everusepreview
     },
     {
       id: 2,
@@ -16,7 +20,8 @@ const Portfolio = () => {
       tagline: 'A D&D Wiki for complete beginners. Start your journey here!',
       techs: ['React', 'JavaScript', 'Sass', 'Cypress'],
       repoLink: 'https://github.com/rachelsoae/dnd-rookie-roadmap',
-      deployedLink: 'http://dnd-rookie-roadmap.vercel.app'
+      deployedLink: 'http://dnd-rookie-roadmap.vercel.app',
+      img: dndpreview
     },
     {
       id: 3,
@@ -25,7 +30,8 @@ const Portfolio = () => {
       techs: ['React', 'JavaScript', 'CSS', 'Cypress', 'Express', 'Knex', 'PostgreSQL'],
       repoLinkFE: 'https://github.com/rachelsoae/humor-me-ui',
       repoLinkBE: 'https://github.com/rachelsoae/humor-me-be',
-      deployedLink: 'http://humor-me-ui.vercel.app'
+      deployedLink: 'http://humor-me-ui.vercel.app',
+      img: humormepreview
     }
     // overlook: {
     //   id: 4,

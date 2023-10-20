@@ -11,7 +11,7 @@ import sass from '../../assets/icons/sass.png';
 import {useState} from 'react';
 
 const Project = ({project}) => {
-  const {id, name, tagline, techs, repoLink, repoLinkFE, repoLinkBE, deployedLink} = project;
+  const {id, name, tagline, techs, repoLink, repoLinkFE, repoLinkBE, deployedLink, img} = project;
 
   const [isActive, setIsActive] = useState(false)
 
@@ -35,13 +35,17 @@ const Project = ({project}) => {
   return (
     <>
     {!isActive ? 
-      <article id={id} onClick={toggleActiveState}>
-        <div>
-          app preview
-        </div>
+      <article
+        id={id} 
+        onClick={toggleActiveState}
+        style={{
+          backgroundImage: `url(${img})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'}}
+      >
       </article>
       :
-      <article id={id} onClick={toggleActiveState}>
+      <article id={id} onClick={toggleActiveState} className='project-detail'> 
         <h3>{name}</h3>
         <p>{tagline}</p>
         <div className='tech'>
