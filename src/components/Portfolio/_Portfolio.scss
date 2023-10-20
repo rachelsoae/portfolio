@@ -11,13 +11,8 @@
   h2 {
     @include header-font;
   }
-  p {
-    margin: 0;
-    font-size: 1.5rem;
-  }
   .projects {
-    display: flex;
-    justify-content: space-evenly;
+    @include space-evenly;
     flex-wrap: wrap;
     margin: 4rem;
     text-align: center;

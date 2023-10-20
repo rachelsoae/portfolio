@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+@mixin space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @mixin button-text {
   font-family: $button-font;
   font-size: 1.5rem;

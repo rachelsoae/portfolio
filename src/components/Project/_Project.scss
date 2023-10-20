@@ -2,31 +2,35 @@
 @use '../../styles/mixins' as *;
 
 article {
-  width: 45rem;
-  height: 40rem;
+  width: 50rem;
+  height: 45rem;
   margin: 3rem;
   border: 1.2rem $secondary-accent-color solid;
   box-shadow: $box-shadow;
+  position: relative;
   @include center-column;
   h3 {
     @include button-text;
+    margin-top: 2.5rem;
   }
   p {
     @include body-font;
     width: 80%;
+    margin: 0;
+    font-size: 1.7rem;
   }
   .tech {
     width: 80%;
-    display: flex;
-    justify-content: space-evenly;
+    @include space-evenly;
     flex-wrap: wrap;
     margin: 2rem;
   }
   .tech-icon-container {
     @include center-column;
-    width: 8rem;
+    width: 9rem;
+    margin-top: 1rem;
     img {
-      height: 4rem;
+      height: 3.5rem;
       margin: 0.5rem;
     }
     p {
@@ -34,6 +38,18 @@ article {
       font-size: 1rem;
       text-align: center;
       margin-bottom: 1rem;
+    }
+  }
+  .project-buttons-container {
+    position: absolute;
+    bottom: 3rem;
+    width: 90%;
+    @include space-evenly;
+    flex-wrap: wrap;
+    .humor-me-buttons {
+      width: 100%;
+      @include space-evenly;
+      margin-top: 2rem;
     }
   }
 }
