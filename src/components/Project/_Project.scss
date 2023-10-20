@@ -3,8 +3,8 @@
 
 article {
   border: none;
-  width: 50rem;
-  height: 45rem;
+  width: 52.4rem;
+  height: 47.4rem;
   margin: 3rem;
   box-shadow: $box-shadow;
   position: relative;
@@ -61,7 +61,8 @@ article {
 
 .project-detail {
   border: 1.2rem $secondary-accent-color solid;
-
+  width: 50rem;
+  height: 45rem;
 }
 
 .project-detail:hover {
