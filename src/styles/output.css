@@ -34,7 +34,6 @@ button:hover {
   background-color: #A3CBA5;
   border: none;
   color: #183C19;
-  animation: button-fade 1s;
 }
 
 a:hover,
@@ -47,7 +46,6 @@ button:hover {
     background-color: #A3CBA5;
     border: none;
     color: #183C19;
-    animation: button-fade 1s;
   }
 }
 .hero-section {
@@ -152,7 +150,8 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.25s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  border-radius: 4px;
 }
 article .project-preview {
   height: 45rem;
@@ -223,14 +222,11 @@ article .project-buttons-container .humor-me-buttons {
   height: 45rem;
 }
 
-.project-detail:hover {
-  transform: scale(1.1);
-}
-
+.project-detail:hover,
 .project-preview:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: transform 0.25s ease-in-out;
+  transition: transform 0.15s ease-in-out;
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -9,7 +9,8 @@ article {
   box-shadow: $box-shadow;
   position: relative;
   @include center-column;
-  transition: transform 0.25s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  border-radius: 4px;
   .project-preview {
     height: 45rem;
     background-size: cover;
@@ -65,13 +66,10 @@ article {
   height: 45rem;
 }
 
-.project-detail:hover {
-  transform: scale(1.1);
-}
-
+.project-detail:hover,
 .project-preview:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: transform 0.25s ease-in-out;
+  transition: transform 0.15s ease-in-out;
 }
 
