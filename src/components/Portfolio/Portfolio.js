@@ -30,7 +30,7 @@ const Portfolio = () => {
     // overlook: {
     //   id: 4,
     //   name: 'Overlook',
-    //   tagline: 'Book your stay at the luxurious Overlook Hotel. Sign in for a personalized experience. Demo Username: customer30, Demo Password: overlook2021',
+    //   tagline: 'Book your stay at the luxurious Overlook Hotel. Sign in for a personalized experience.',
     //   tech: ['React', 'JavaScript', 'Sass/SCSS', 'Cypress']
     // }
   ];
