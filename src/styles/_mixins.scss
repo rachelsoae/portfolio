@@ -6,8 +6,57 @@
   align-items: center;
 }
 
-@mixin button {
-  font-family: $button-font;
-  font-size: 1.25rem;
-  font-weight: 700;
+@mixin center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+@mixin space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin button-text {
+  font-family: $button-font;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+
+@mixin button-box {
+  width: 15.75rem;
+  height: 5.25rem;
+  border-radius: 12px;
+  border: 1px solid $primary-accent-color;
+  box-shadow: $box-shadow;
+}
+
+@mixin button-style-primary {
+  background-color: $primary-accent-color;
+  color: $secondary-text-color;
+}
+
+@mixin button-style-secondary {
+  color: $primary-accent-color;
+}
+
+@mixin button-hover {
+  background-color: $secondary-accent-color;
+  border: none;
+  color: $emphasis-text-color;
+}
+
+@mixin header-font {
+  font-family: $header-font;
+  color: $primary-text-color;
+  font-size: 36px;
+}
+
+@mixin body-font {
+  font-family: $body-font;
+  color: $primary-text-color;
+  font-size: 24px;
+}
+

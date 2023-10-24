@@ -1,2 +1,20 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
+
+* {
+  // border: 1px solid $secondary-accent-color;
+}
+
+.projects-section {
+  height: 100%;
+  @include center-column;
+  h2 {
+    @include header-font;
+  }
+  .projects {
+    @include space-evenly;
+    flex-wrap: wrap;
+    margin: 4rem;
+    text-align: center;
+  }
+}
