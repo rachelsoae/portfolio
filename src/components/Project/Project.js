@@ -28,22 +28,28 @@ const Project = ({project}) => {
 
   const [isFront, setIsFront] = useState(true)
 
-  const toggleFront = () => {
+  const flipCard = () => {
     setIsFront(prevState => !prevState)
-  }
-
-  const frontStyle = {
-    backgroundImage: isFront && `url(${img})`,
-    backgroundSize: isFront && 'cover',
-    backgroundPosition: isFront && 'center'
   }
 
   return (
     <>
-      <article className='card-front' style={frontStyle}>
-
+      {isFront ?
+      <article 
+        className='card-front' 
+        style={{
+          backgroundImage: isFront && `url(${img})`,
+          backgroundSize: isFront && 'cover',
+          backgroundPosition: isFront && 'center'
+        }}
+        onClick={() => flipCard()}
+      >
       </article>
-      <article className='card-back'>
+      :
+      <article 
+        className='card-back'
+        onClick={() => flipCard()}
+      >
       <h3>{name}</h3>
         <p>{tagline}</p>
         <div className='tech'>
@@ -80,7 +86,7 @@ const Project = ({project}) => {
             </a>
           </div> 
         }
-      </article>
+      </article>}
     </>
   )
 }

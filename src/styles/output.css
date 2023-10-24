@@ -207,8 +207,6 @@ article {
   margin-bottom: 1rem;
 }
 .card-back .project-buttons-container {
-  position: absolute;
-  bottom: 3rem;
   width: 90%;
   display: flex;
   justify-content: space-evenly;
