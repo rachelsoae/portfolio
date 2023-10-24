@@ -10,48 +10,41 @@ import react from '../../assets/icons/react.png';
 import sass from '../../assets/icons/sass.png';
 import {useState} from 'react';
 
+const ICONS = {
+  'CSS': css,
+  'Cypress': cypress,
+  'Express': express,
+  'GitHub Actions': githubactions,
+  'GraphQL': graphql,
+  'JavaScript': javascript,
+  'Knex': knex,
+  'PostgreSQL': postgresql,
+  'Sass': sass,
+  'React': react, 
+}
+
 const Project = ({project}) => {
   const {id, name, tagline, techs, repoLink, repoLinkFE, repoLinkBE, deployedLink, img} = project;
 
-  const [isActive, setIsActive] = useState(false)
+  const [isFront, setIsFront] = useState(true)
 
-  const ICONS = {
-    'CSS': css,
-    'Cypress': cypress,
-    'Express': express,
-    'GitHub Actions': githubactions,
-    'GraphQL': graphql,
-    'JavaScript': javascript,
-    'Knex': knex,
-    'PostgreSQL': postgresql,
-    'Sass': sass,
-    'React': react, 
+  const toggleFront = () => {
+    setIsFront(prevState => !prevState)
   }
 
-  const toggleActiveState = () => {
-    return setIsActive(prevState => !prevState)
+  const frontStyle = {
+    backgroundImage: isFront && `url(${img})`,
+    backgroundSize: isFront && 'cover',
+    backgroundPosition: isFront && 'center'
   }
 
   return (
     <>
-    {!isActive ? 
-      <article
-        className='project-preview'
-        id={id} 
-        onClick={toggleActiveState}
-        style={{
-          backgroundImage: `url(${img})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'}}
-      >
+      <article className='card-front' style={frontStyle}>
+
       </article>
-      :
-      <article 
-        className='project-detail'
-        id={id} 
-        onClick={toggleActiveState} 
-      > 
-        <h3>{name}</h3>
+      <article className='card-back'>
+      <h3>{name}</h3>
         <p>{tagline}</p>
         <div className='tech'>
           {techs.map(tech => {
@@ -85,20 +78,11 @@ const Project = ({project}) => {
             <a href={repoLink}>
               <button className='primary-button'>GitHub</button>
             </a>
-          </div>
+          </div> 
         }
       </article>
-    }
     </>
   )
 }
 
 export default Project;
-
-// set initial state ('inactive' or 'default' or 'preview')
-// ternary
-// if state is initial state, render project preview
-// if not, render project detail (what is coded above)
-// on hover, emphasize project
-// on click, change state
-// use GSAP(?) to animate card flip

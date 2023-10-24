@@ -2,19 +2,24 @@
 @use '../../styles/mixins' as *;
 
 article {
-  border: none;
-  width: 52.4rem;
-  height: 47.4rem;
   margin: 3rem;
   box-shadow: $box-shadow;
   position: relative;
   @include center-column;
   transition: transform 0.15s ease-in-out;
   border-radius: 4px;
-  .project-preview {
-    height: 45rem;
-    background-size: cover;
-  }
+}
+
+.card-front {
+  border: none;
+  width: 52.4rem;
+  height: 47.4rem;
+}
+
+.card-back {
+  border: 1.2rem $secondary-accent-color solid;
+  width: 50rem;
+  height: 45rem;
   h3 {
     @include button-text;
     margin-top: 2.5rem;
@@ -60,16 +65,13 @@ article {
   }
 }
 
-.project-detail {
-  border: 1.2rem $secondary-accent-color solid;
-  width: 50rem;
-  height: 45rem;
-}
-
-.project-detail:hover,
-.project-preview:hover {
+.card-back:hover,
+.card-front:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.15s ease-in-out;
 }
 
+.hidden {
+  visibility: hidden;
+}

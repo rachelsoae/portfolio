@@ -141,9 +141,6 @@ nav .nav__buttons a:active {
 }
 
 article {
-  border: none;
-  width: 52.4rem;
-  height: 47.4rem;
   margin: 3rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   position: relative;
@@ -153,11 +150,19 @@ article {
   transition: transform 0.15s ease-in-out;
   border-radius: 4px;
 }
-article .project-preview {
-  height: 45rem;
-  background-size: cover;
+
+.card-front {
+  border: none;
+  width: 52.4rem;
+  height: 47.4rem;
 }
-article h3 {
+
+.card-back {
+  border: 1.2rem #A3CBA5 solid;
+  width: 50rem;
+  height: 45rem;
+}
+.card-back h3 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -165,7 +170,7 @@ article h3 {
   text-transform: uppercase;
   margin-top: 2.5rem;
 }
-article p {
+.card-back p {
   font-family: "Ubuntu", sans-serif;
   color: #424242;
   font-size: 24px;
@@ -173,25 +178,25 @@ article p {
   margin: 0;
   font-size: 1.7rem;
 }
-article .tech {
+.card-back .tech {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 2rem;
 }
-article .tech-icon-container {
+.card-back .tech-icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 9rem;
   margin-top: 1rem;
 }
-article .tech-icon-container img {
+.card-back .tech-icon-container img {
   height: 3.5rem;
   margin: 0.5rem;
 }
-article .tech-icon-container p {
+.card-back .tech-icon-container p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -201,7 +206,7 @@ article .tech-icon-container p {
   text-align: center;
   margin-bottom: 1rem;
 }
-article .project-buttons-container {
+.card-back .project-buttons-container {
   position: absolute;
   bottom: 3rem;
   width: 90%;
@@ -209,24 +214,22 @@ article .project-buttons-container {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-article .project-buttons-container .humor-me-buttons {
+.card-back .project-buttons-container .humor-me-buttons {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-top: 2rem;
 }
 
-.project-detail {
-  border: 1.2rem #A3CBA5 solid;
-  width: 50rem;
-  height: 45rem;
-}
-
-.project-detail:hover,
-.project-preview:hover {
+.card-back:hover,
+.card-front:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.15s ease-in-out;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=output.css.map */
