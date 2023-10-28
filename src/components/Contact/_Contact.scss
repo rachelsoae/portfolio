@@ -1,2 +1,40 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
+
+* {
+  // border: 1px solid $secondary-accent-color;
+}
+
+.contact-section {
+  @include center-column;
+  .email-container {
+    display: flex;
+    align-items: center;
+    margin: 10rem 0 3rem;
+  }
+  .email {
+    color: $primary-accent-color;
+    margin-left: 1rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  .email:hover {
+    text-decoration: underline;
+    text-decoration-color: $primary-accent-color;
+  }
+  .social-icons-container {
+    @include space-evenly;
+    align-items: center;
+    height: 10rem;
+    width: 30%;
+  }
+  img {
+    width: 5rem;
+    transition: transform 0.15s ease-in-out;
+  }
+  img:hover {
+    scale: 1.1;
+    transition: transform 0.15s ease-in-out;
+  }
+}
