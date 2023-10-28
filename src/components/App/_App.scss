@@ -14,6 +14,15 @@ html {
   background-color: $primary-background-color;
 }
 
+h2 {
+  @include header-font;
+}
+
+p {
+  @include body-font;
+  margin: 0;
+}
+
 button {
   @include button-text;
   @include button-box;
