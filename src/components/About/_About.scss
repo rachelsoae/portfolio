@@ -1,2 +1,23 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
+
+.about__wrapper {
+  @include center-column;
+}
+
+.about__content {
+  @include space-evenly;
+}
+
+.about__image {
+  height: 50vh;
+}
+
+.about__text {
+  width: 50%;
+  @include center-column;
+  p {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+}
