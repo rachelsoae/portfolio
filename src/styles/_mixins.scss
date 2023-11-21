@@ -66,3 +66,7 @@
   letter-spacing: 0.05rem;
 }
 
+@mixin link-hover {
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
+}

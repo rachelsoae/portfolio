@@ -28,10 +28,14 @@ nav {
     @include button-text;
     padding-left: 3rem;
     color: $emphasis-text-color;
+    transition: transform 0.05s ease-in-out;
   }
   a,
   a:active {
     text-decoration: none;
+  }
+  a:hover {
+    @include link-hover;
   }
 }
 

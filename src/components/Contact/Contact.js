@@ -6,7 +6,7 @@ const Contact = () => {
     <div className='contact-section'>
       <h2>Contact</h2>
       <div className='email-container'>
-        <p>Send email to</p>
+        <p>Email me at</p>
         <a href='mailto:rachelprather1@gmail.com'>
           <p className='email'> rachelprather1@gmail.com</p>
         </a>

@@ -32,6 +32,7 @@ p {
 button {
   @include button-text;
   @include button-box;
+  transition: transform 0.05s ease-in-out;
 }
 
 .primary-button {

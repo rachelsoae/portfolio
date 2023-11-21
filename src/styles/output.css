@@ -1,25 +1,25 @@
-.about__wrapper {
+.about-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about__content {
+.about-content {
   display: flex;
   justify-content: space-evenly;
 }
 
-.about__image {
+.about-image {
   height: 50vh;
 }
 
-.about__text {
+.about-text {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about__text p {
+.about-text p {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
@@ -68,6 +68,7 @@ button {
   border-radius: 12px;
   border: 1px solid #28652B;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.05s ease-in-out;
 }
 
 .primary-button {
@@ -107,7 +108,7 @@ button:hover {
 .contact-section .email-container {
   display: flex;
   align-items: center;
-  margin: 10rem 0 3rem;
+  margin-bottom: 2em;
 }
 .contact-section .email {
   color: #28652B;
@@ -129,11 +130,11 @@ button:hover {
 }
 .contact-section img {
   width: 5rem;
-  transition: transform 0.15s ease-in-out;
+  transition: transform 0.05s ease-in-out;
 }
 .contact-section img:hover {
-  scale: 1.1;
-  transition: transform 0.15s ease-in-out;
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
 }
 
 .hero-section {
@@ -154,6 +155,10 @@ button:hover {
 }
 .hero-section .hero-text-container .buttons-container button {
   margin-right: 2rem;
+}
+.hero-section .hero-text-container .buttons-container button:hover {
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
 }
 .hero-section .hero-image {
   width: 30%;
@@ -194,10 +199,15 @@ nav {
   text-transform: uppercase;
   padding-left: 3rem;
   color: #183C19;
+  transition: transform 0.05s ease-in-out;
 }
 .nav__buttons a,
 .nav__buttons a:active {
   text-decoration: none;
+}
+.nav__buttons a:hover {
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
 }
 
 @media screen and (min-width: 1400px) {
