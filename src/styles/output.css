@@ -214,8 +214,9 @@ nav {
 .projects-section .projects {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
   flex-wrap: wrap;
-  margin: 4rem;
+  margin: 0 4rem 4rem;
   text-align: center;
 }
 
