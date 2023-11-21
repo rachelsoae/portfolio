@@ -2,15 +2,15 @@ import headshot from '../../assets/headshot.jpg'
 
 const About = () => {
   return (
-    <div className='about__wrapper'>
+    <div className='about-wrapper'>
       <h2>About</h2>
-      <div className='about__content'>
+      <div className='about-content'>
         <img 
           src={headshot} 
           alt='Rachel, a woman with glasses, long brown hair, and wearing a blue blazer, smiles warmly at the camera'
-          className='about__image'
+          className='about-image'
         />
-        <section className='about__text'>
+        <section className='about-text'>
           <p>
             Rachel Soae Prather is a Korean-American Software Engineer and Web Developer residing outside Portland, Oregon. 
           </p>

@@ -1,19 +1,19 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.about__wrapper {
+.about-wrapper {
   @include center-column;
 }
 
-.about__content {
+.about-content {
   @include space-evenly;
 }
 
-.about__image {
+.about-image {
   height: 50vh;
 }
 
-.about__text {
+.about-text {
   width: 50%;
   @include center-column;
   p {
