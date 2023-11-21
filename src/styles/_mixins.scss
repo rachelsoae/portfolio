@@ -17,6 +17,11 @@
   justify-content: space-evenly;
 }
 
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin button-text {
   font-family: $button-font;
   font-size: 1.5rem;
