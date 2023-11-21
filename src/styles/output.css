@@ -1,3 +1,29 @@
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-image {
+  height: 50vh;
+}
+
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-text p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
 html,
 body,
 .root,
@@ -11,16 +37,23 @@ html {
   background-color: #F5F5F5;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+}
+
 h2 {
   font-family: "Offside", sans-serif;
   color: #424242;
   font-size: 36px;
+  margin: 2em 0;
 }
 
 p {
   font-family: "Ubuntu", sans-serif;
   color: #424242;
-  font-size: 24px;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
   margin: 0;
 }
 
@@ -35,6 +68,7 @@ button {
   border-radius: 12px;
   border: 1px solid #28652B;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: transform 0.05s ease-in-out;
 }
 
 .primary-button {
@@ -61,6 +95,11 @@ button:hover {
     color: #183C19;
   }
 }
+@media screen and (min-width: 1400px) {
+  .main__wrapper {
+    width: 1400px;
+  }
+}
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -69,7 +108,7 @@ button:hover {
 .contact-section .email-container {
   display: flex;
   align-items: center;
-  margin: 10rem 0 3rem;
+  margin-bottom: 2em;
 }
 .contact-section .email {
   color: #28652B;
@@ -91,26 +130,23 @@ button:hover {
 }
 .contact-section img {
   width: 5rem;
-  transition: transform 0.15s ease-in-out;
+  transition: transform 0.05s ease-in-out;
 }
 .contact-section img:hover {
-  scale: 1.1;
-  transition: transform 0.15s ease-in-out;
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
 }
 
 .hero-section {
-  height: 80vh;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  height: 80vh;
 }
 .hero-section .hero-text-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 60%;
-  margin: 0 5rem;
 }
 .hero-section .hero-text-container .buttons-container {
   display: flex;
@@ -120,46 +156,65 @@ button:hover {
 .hero-section .hero-text-container .buttons-container button {
   margin-right: 2rem;
 }
+.hero-section .hero-text-container .buttons-container button:hover {
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
+}
 .hero-section .hero-image {
-  width: 40%;
-  height: 100%;
+  width: 30%;
+  height: 85%;
   object-fit: cover;
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
   background-color: #F5F5F5;
-  border-top: 5px solid #A3CBA5;
+  border-top: 5px solid #28652B;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
 }
-nav #logo {
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#logo {
   object-fit: cover;
   height: 10rem;
   margin: 0;
 }
-nav .nav__buttons {
+
+.nav__buttons {
   display: flex;
   align-items: center;
-  margin-right: 5rem;
   height: 100%;
 }
-nav .nav__buttons a {
+.nav__buttons a {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
-  padding: 0 3rem;
-  height: 100%;
+  padding-left: 3rem;
   color: #183C19;
+  transition: transform 0.05s ease-in-out;
 }
-nav .nav__buttons a,
-nav .nav__buttons a:active {
+.nav__buttons a,
+.nav__buttons a:active {
   text-decoration: none;
 }
+.nav__buttons a:hover {
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
+}
 
+@media screen and (min-width: 1400px) {
+  .nav__wrapper {
+    width: 1400px;
+  }
+}
 .projects-section {
   height: 100%;
   display: flex;
@@ -169,8 +224,9 @@ nav .nav__buttons a:active {
 .projects-section .projects {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
   flex-wrap: wrap;
-  margin: 4rem;
+  margin: 0 4rem 4rem;
   text-align: center;
 }
 
@@ -207,7 +263,8 @@ article {
 .card-back p {
   font-family: "Ubuntu", sans-serif;
   color: #424242;
-  font-size: 24px;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
   width: 80%;
   margin: 0;
   font-size: 1.7rem;

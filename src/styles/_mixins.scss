@@ -17,6 +17,11 @@
   justify-content: space-evenly;
 }
 
+@mixin space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin button-text {
   font-family: $button-font;
   font-size: 1.5rem;
@@ -57,6 +62,11 @@
 @mixin body-font {
   font-family: $body-font;
   color: $primary-text-color;
-  font-size: 24px;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
 }
 
+@mixin link-hover {
+  transform: scale(1.2);
+  transition: transform 0.05s ease-in-out;
+}
