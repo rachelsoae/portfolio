@@ -1,10 +1,6 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-* {
-  // border: 1px solid $secondary-accent-color;
-}
-
 .contact-section {
   @include center-column;
   .email-container {
