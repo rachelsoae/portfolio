@@ -11,28 +11,30 @@ const App = () => {
     <div className='app'>
       <Nav />
       <main>
-        <Routes>
-          <Route 
-            path='/' 
-            element={<Home />}
-          />
-          <Route 
-            path='/about'
-            element={<About />}
-          />
-          <Route 
-            path='/contact'
-            element={<Contact />}
-          />
-          <Route 
-            path='/portfolio'
-            element={<Portfolio />}
-          />
-          <Route 
-            path='/error'
-          />
-        </Routes>
-      </main>
+        <div className='main__wrapper'>
+          <Routes>
+            <Route 
+              path='/' 
+              element={<Home />}
+            />
+            <Route 
+              path='/about'
+              element={<About />}
+            />
+            <Route 
+              path='/contact'
+              element={<Contact />}
+            />
+            <Route 
+              path='/portfolio'
+              element={<Portfolio />}
+            />
+            <Route 
+              path='/error'
+            />
+          </Routes>
+        </div>
+       </main>
       <Footer />
     </div>
   )
