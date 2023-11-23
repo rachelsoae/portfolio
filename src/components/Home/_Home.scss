@@ -10,6 +10,12 @@
 .hero-text-container {
   width: 60%;
   @include true-center;
+  h2 {
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 3rem;
+  }
 }
 
 .hero-text-wrapper {
