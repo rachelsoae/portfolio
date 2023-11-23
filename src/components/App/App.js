@@ -11,7 +11,7 @@ const App = () => {
     <div className='app'>
       <Nav />
       <main>
-        <div className='main__wrapper'>
+        <div className='main-wrapper'>
           <Routes>
             <Route 
               path='/' 
