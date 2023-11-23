@@ -24,14 +24,14 @@
 
 @mixin button-text {
   font-family: $button-font;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  // font-weight: 500;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
 
 @mixin button-box {
-  width: 15.75rem;
+  width: 16.5rem;
   height: 5.25rem;
   border-radius: 12px;
   border: 1px solid $primary-accent-color;
@@ -56,14 +56,16 @@
 @mixin header-font {
   font-family: $header-font;
   color: $primary-text-color;
-  font-size: 36px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  // font-weight: 400;
+  letter-spacing: 0.5rem;
 }
 
 @mixin body-font {
   font-family: $body-font;
   color: $primary-text-color;
-  font-size: 3rem;
-  letter-spacing: 0.05rem;
+  font-size: 2.5rem;
 }
 
 @mixin link-hover {

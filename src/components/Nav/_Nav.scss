@@ -3,27 +3,33 @@
 
 nav {
   background-color: $primary-background-color;
-  border-top: 5px solid $primary-accent-color;
+  border-top: 5px solid $secondary-accent-color;
   min-width: 100%;
   display: flex;
   justify-content: center;
+  height: 8.5rem;
 }
 
-.nav__wrapper {
+.nav-wrapper {
   @include space-between;
   width: 90%;
+  h1 {
+    margin: 0 0 0 2rem;
+  }
 }
 
 #logo {
   object-fit: cover;
-  height: 10rem;
+  height: 100%;
   margin: 0;
+  width: 23rem;
 }
 
-.nav__buttons {
+.nav-buttons {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-right: 2rem;
   a {
     @include button-text;
     padding-left: 3rem;
@@ -39,8 +45,8 @@ nav {
   }
 }
 
-@media screen and (min-width: 1400px) {
-  .nav__wrapper {
-    width: 1400px
+@media screen and (min-width: 1440px) {
+  .nav-wrapper {
+    width: 1440px
   }
 }

@@ -42,13 +42,13 @@ const Project = ({project}) => {
           backgroundSize: isFront && 'cover',
           backgroundPosition: isFront && 'center'
         }}
-        onClick={() => flipCard()}
+        onMouseEnter={() => flipCard()}
       >
       </article>
       :
       <article 
         className='card-back'
-        onClick={() => flipCard()}
+        onMouseLeave={() => flipCard()}
       >
       <h3>{name}</h3>
         <p>{tagline}</p>

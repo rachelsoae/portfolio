@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       id: 1,
       name: 'EverUse',
-      tagline: 'This product-focused e-commerce app was built on behalf of the small sustainability business EverUse Upcycled Products.',
+      tagline: 'This product-focused e-commerce app was built for the small sustainability business EverUse Upcycled Products.',
       techs: ['React', 'JavaScript', 'Sass', 'Cypress', 'GraphQL', 'GitHub Actions'],
       repoLink: 'https://github.com/JamieCaudill/EverUse-FE-Vercel',
       deployedLink: 'https://everuse-fe.vercel.app',
@@ -17,7 +17,7 @@ const Portfolio = () => {
     {
       id: 2,
       name: 'D&D : The Rookie\'s Roadmap',
-      tagline: 'A D&D Wiki for complete beginners. Start your journey here!',
+      tagline: 'A D&D wiki-style resource for complete beginners. Start your journey here!',
       techs: ['React', 'JavaScript', 'Sass', 'Cypress'],
       repoLink: 'https://github.com/rachelsoae/dnd-rookie-roadmap',
       deployedLink: 'http://dnd-rookie-roadmap.vercel.app',
