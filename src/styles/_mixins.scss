@@ -56,7 +56,10 @@
 @mixin header-font {
   font-family: $header-font;
   color: $primary-text-color;
-  font-size: 36px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
 }
 
 @mixin body-font {
