@@ -1,4 +1,4 @@
-import placeholder from '../../assets/flowers-bw-op.png'
+import philomena from '../../assets/philomena.jpeg'
 import {Link} from 'react-router-dom';
 
 const Home = () => {
@@ -19,11 +19,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <img 
-        src={placeholder} 
-        alt='this image should be replaced'
-        className='hero-image'
-      />
+      <div className='hero-image-container'>
+        <img 
+          src={philomena} 
+          alt='a fiddle-leaf fig grows skyward against an off-white backdrop'
+        />
+      </div>   
     </div>
   )
 }
