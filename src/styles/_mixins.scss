@@ -25,7 +25,6 @@
 @mixin button-text {
   font-family: $button-font;
   font-size: 2rem;
-  // font-weight: 500;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
@@ -58,7 +57,7 @@
   color: $primary-text-color;
   font-size: 3rem;
   text-transform: uppercase;
-  // font-weight: 400;
+  font-weight: 200;
   letter-spacing: 0.5rem;
 }
 
