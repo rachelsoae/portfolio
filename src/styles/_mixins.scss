@@ -64,8 +64,8 @@
 @mixin body-font {
   font-family: $body-font;
   color: $primary-text-color;
-  font-size: 2.5rem;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 @mixin link-hover {

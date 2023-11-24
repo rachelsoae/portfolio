@@ -56,9 +56,10 @@ h2 {
 }
 
 p {
-  font-family: "Namdhinggo", serif;
+  font-family: "Inter", sans-serif;
   color: #424242;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -70,7 +71,7 @@ button {
   width: 16.5rem;
   height: 5.25rem;
   border-radius: 12px;
-  border: 1px solid #47725d;
+  border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: transform 0.05s ease-in-out;
 }
@@ -157,7 +158,8 @@ button:hover {
   margin-bottom: 3rem;
 }
 .hero-text-container p {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
 }
 
 .hero-text-wrapper {
@@ -285,9 +287,10 @@ article {
   margin-top: 2.5rem;
 }
 .card-back p {
-  font-family: "Namdhinggo", serif;
+  font-family: "Inter", sans-serif;
   color: #424242;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   width: 80%;
   margin: 0;
 }
