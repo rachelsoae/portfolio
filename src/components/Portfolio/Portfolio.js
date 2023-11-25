@@ -26,7 +26,7 @@ const Portfolio = () => {
     {
       id: 3,
       name: 'Humor Me',
-      tagline: 'A full-stack app centered around self-teaching PERN development',
+      tagline: 'A full-stack app centered around self-teaching PERN development.',
       techs: ['React', 'JavaScript', 'CSS', 'Cypress', 'Express', 'Knex', 'PostgreSQL'],
       repoLinkFE: 'https://github.com/rachelsoae/humor-me-ui',
       repoLinkBE: 'https://github.com/rachelsoae/humor-me-be',
