@@ -22,6 +22,14 @@
 .about-text p {
   margin-bottom: 1rem;
 }
+.about-text a {
+  color: #47725d;
+  text-decoration: none;
+}
+.about-text a:hover {
+  text-decoration: underline;
+  text-decoration-color: #47725d;
+}
 
 html,
 body,
@@ -50,14 +58,16 @@ h2 {
   color: #424242;
   font-size: 3rem;
   text-transform: uppercase;
+  font-weight: 200;
   letter-spacing: 0.5rem;
   margin: 2em 0;
 }
 
 p {
-  font-family: "Namdhinggo", serif;
+  font-family: "Inter", sans-serif;
   color: #424242;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -69,13 +79,13 @@ button {
   width: 16.5rem;
   height: 5.25rem;
   border-radius: 12px;
-  border: 1px solid #28652B;
+  border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: transform 0.05s ease-in-out;
 }
 
 .primary-button {
-  background-color: #28652B;
+  background-color: #47725d;
   color: #F5F5F5;
 }
 
@@ -114,7 +124,7 @@ button:hover {
   margin-bottom: 2em;
 }
 .contact-section .email {
-  color: #28652B;
+  color: #47725d;
   margin-left: 1rem;
 }
 .contact-section a {
@@ -122,7 +132,7 @@ button:hover {
 }
 .contact-section .email:hover {
   text-decoration: underline;
-  text-decoration-color: #28652B;
+  text-decoration-color: #47725d;
 }
 .contact-section .social-icons-container {
   display: flex;
@@ -136,7 +146,7 @@ button:hover {
   transition: transform 0.05s ease-in-out;
 }
 .contact-section img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
@@ -156,7 +166,8 @@ button:hover {
   margin-bottom: 3rem;
 }
 .hero-text-container p {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
 }
 
 .hero-text-wrapper {
@@ -172,7 +183,7 @@ button:hover {
   margin-right: 2rem;
 }
 .hero-text-wrapper .buttons-container button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
@@ -206,8 +217,8 @@ nav {
 #logo {
   object-fit: cover;
   height: 100%;
-  margin: 0;
-  width: 23rem;
+  margin: 1rem 0 0;
+  width: 29rem;
 }
 
 .nav-buttons {
@@ -230,7 +241,7 @@ nav {
   text-decoration: none;
 }
 .nav-buttons a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
@@ -284,9 +295,10 @@ article {
   margin-top: 2.5rem;
 }
 .card-back p {
-  font-family: "Namdhinggo", serif;
+  font-family: "Inter", sans-serif;
   color: #424242;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
   width: 80%;
   margin: 0;
 }
