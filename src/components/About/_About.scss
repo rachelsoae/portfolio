@@ -19,4 +19,11 @@
   p {
     margin-bottom: 1rem;
   }
+  a {
+    color: $primary-accent-color;
+    text-decoration: none;
+  }
+  a:hover {
+    @include inline-link-hover;
+  }
 }

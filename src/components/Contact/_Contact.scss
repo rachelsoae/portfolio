@@ -16,8 +16,7 @@
     text-decoration: none;
   }
   .email:hover {
-    text-decoration: underline;
-    text-decoration-color: $primary-accent-color;
+    @include inline-link-hover;
   }
   .social-icons-container {
     @include space-evenly;

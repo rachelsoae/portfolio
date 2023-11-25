@@ -22,6 +22,14 @@
 .about-text p {
   margin-bottom: 1rem;
 }
+.about-text a {
+  color: #47725d;
+  text-decoration: none;
+}
+.about-text a:hover {
+  text-decoration: underline;
+  text-decoration-color: #47725d;
+}
 
 html,
 body,
@@ -138,7 +146,7 @@ button:hover {
   transition: transform 0.05s ease-in-out;
 }
 .contact-section img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
@@ -175,7 +183,7 @@ button:hover {
   margin-right: 2rem;
 }
 .hero-text-wrapper .buttons-container button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
@@ -233,7 +241,7 @@ nav {
   text-decoration: none;
 }
 .nav-buttons a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
