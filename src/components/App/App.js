@@ -1,6 +1,5 @@
 import {Routes, Route} from 'react-router-dom';
-import TopNav from '../TopNav/TopNav';
-import BurgerNav from '../BurgerNav/BurgerNav';
+import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
@@ -21,7 +20,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      <TopNav />
+      <Nav />
       <main>
         <div className='main-wrapper'>
           <Routes>
