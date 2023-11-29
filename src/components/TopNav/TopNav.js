@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
 import logo from '../../assets/logo.png'
 
-const Nav = () => {
+const TopNav = () => {
   return (
     <nav>
       <div className='nav-wrapper'>
@@ -23,4 +23,5 @@ const Nav = () => {
   )
 }
 
-export default Nav;
+export default TopNav;
+
