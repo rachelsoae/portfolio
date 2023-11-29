@@ -1,19 +1,14 @@
 import {Link} from 'react-router-dom';
-import {useState} from 'react';
 
-const BurgerNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const BurgerNav = ({isOpen, setIsOpen}) => {
   return (
     <>
-      {
-        isOpen ?
-        <h1>open</h1>
-        :
-        <span className='material-symbols-rounded'>
-          menu
-        </span> 
-      }
+      <Link to='/contact'>
+        <button  className='primary-button'>Contact Me</button>
+      </Link>
+      <span className='material-symbols-rounded' onClick={() => setIsOpen(!isOpen)}>
+        menu
+      </span> 
     </>
   )  
 }

@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import BurgerNav from '../BurgerNav/BurgerNav';
 import TopNav from '../TopNav/TopNav';
 
-const Nav = () => {
+const Nav = ({isOpen, setIsOpen}) => {
 
         // import hamburger icon
         // set state in App that will determine if hamburger is visible or if full nav is visible (isHamburger?)
@@ -18,7 +18,7 @@ const Nav = () => {
   const [isBurger, setIsBurger] = useState(true);
 
   return (
-    <nav>
+    <nav className='top-nav'>
       <div className='nav-wrapper'>
         <h1>
           <Link to='/'>
@@ -26,7 +26,7 @@ const Nav = () => {
           </Link>
         </h1>
         <div className='nav-buttons'>
-          {isBurger ? <BurgerNav /> : <TopNav />}
+          {isBurger ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
         </div>
       </div>
     </nav>
