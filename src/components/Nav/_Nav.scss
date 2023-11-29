@@ -43,6 +43,13 @@ nav {
   a:hover {
     @include link-hover;
   }
+  .material-symbols-rounded {
+    color: $primary-accent-color;
+    font-size: 3rem;
+  }
+  .material-sybmols-rounded:hover {
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 1440px) {

@@ -5,7 +5,17 @@ import BurgerNav from '../BurgerNav/BurgerNav';
 import TopNav from '../TopNav/TopNav';
 
 const Nav = () => {
-  const [isBurger, setIsBurger] = useState(false);
+
+        // import hamburger icon
+        // set state in App that will determine if hamburger is visible or if full nav is visible (isHamburger?)
+  // CTA should be visible at all times
+  // when screen shrinks below certain size (1000px?) flip isHamburger to true
+        // conditionally render nav buttons or hamburger based on isHamburger
+  // when hamburger is clicked, flip state (isOpen?)
+  // when menu is open, overlay nav should be visible, hamburger icon should be invisible, exit button should be visible
+        // create component for hamburger Nav     
+
+  const [isBurger, setIsBurger] = useState(true);
 
   return (
     <nav>
@@ -15,15 +25,9 @@ const Nav = () => {
             <img src={logo} id='logo' alt='Rachel Soae Prather, Software Engineer' />
           </Link>
         </h1>
-        {isBurger ? <BurgerNav /> : <TopNav />}
-        {/* <div className='nav-buttons'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/portfolio'>Portfolio</Link>
-          <Link to='/contact'>
-            <button  className='primary-button'>Contact Me</button>
-          </Link>
-        </div> */}
+        <div className='nav-buttons'>
+          {isBurger ? <BurgerNav /> : <TopNav />}
+        </div>
       </div>
     </nav>
   )

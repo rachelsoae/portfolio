@@ -245,6 +245,10 @@ nav {
   transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
+.nav-buttons .material-symbols-rounded {
+  color: #47725d;
+  font-size: 3rem;
+}
 
 @media screen and (min-width: 1440px) {
   .nav-wrapper {
