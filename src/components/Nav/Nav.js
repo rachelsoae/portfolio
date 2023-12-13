@@ -1,24 +1,23 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/logo.png'
 import BurgerNav from '../BurgerNav/BurgerNav';
 import TopNav from '../TopNav/TopNav';
 
 const Nav = ({isOpen, setIsOpen}) => {
+  const pageWidth = window.innerWidth;
+  const [isBurger, setIsBurger] = useState(pageWidth < 1000 ? true : false);
 
-        // import hamburger icon
-        // set state in App that will determine if hamburger is visible or if full nav is visible (isHamburger?)
-  // CTA should be visible at all times
-  // when screen shrinks below certain size (1000px?) flip isHamburger to true
-        // conditionally render nav buttons or hamburger based on isHamburger
-  // when hamburger is clicked, flip state (isOpen?)
-  // when menu is open, overlay nav should be visible, hamburger icon should be invisible, exit button should be visible
-        // create component for hamburger Nav     
+  const flipBurger = () => {
+    return pageWidth < 1050 ? setIsBurger(true) : setIsBurger(false)
+  }
 
-  const [isBurger, setIsBurger] = useState(true);
+  useEffect(() => {
+    window.addEventListener('resize', flipBurger);
+  }, [isBurger])
 
   return (
-    <nav className='top-nav'>
+    <nav className='top-nav' >
       <div className='nav-wrapper'>
         <h1>
           <Link to='/'>
@@ -26,7 +25,7 @@ const Nav = ({isOpen, setIsOpen}) => {
           </Link>
         </h1>
         <div className='nav-buttons'>
-          {isBurger ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
+          {isBurger === true ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
         </div>
       </div>
     </nav>
