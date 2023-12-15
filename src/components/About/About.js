@@ -25,7 +25,7 @@ const About = () => {
             I am dedicated to excellence and constant improvement and have earned multiple awards for outstanding performance and service... although my proudest achievement was being voted "Most Uplifting" by my graduating class at Turing School of Software & Design, where I earned a Certificate in Front End Software Engineering. 
           </p>
           <p>
-            My mission is to Build Technology that Builds Community. In service of that mission, I work and volunteer with ethical organizations that strive to better the world around them. I am currently associated with Rita XYZ, InReach, Lesbians Who Tech & Allies, and PDXWIT.
+            My mission is to Build Technology that Builds Community. In service of that mission, I work and volunteer with ethical organizations that strive to better the world around them. I am currently associated with Rita XYZ, Lesbians Who Tech & Allies, and PDXWIT.
           </p>
           <p>
             In my downtime, I can be found eating kimchi, hunting for the best honey at the farmer's market, and making music with friends.

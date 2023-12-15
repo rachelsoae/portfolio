@@ -242,7 +242,6 @@ button:hover,
   min-width: 100%;
   display: flex;
   justify-content: center;
-  height: 8.5rem;
 }
 
 .nav-wrapper {
@@ -256,7 +255,6 @@ button:hover,
 
 #logo {
   object-fit: cover;
-  height: 100%;
   margin: 1rem 0 0;
   width: 29rem;
 }
