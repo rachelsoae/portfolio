@@ -4,20 +4,17 @@ import logo from '../../assets/logo.png'
 import BurgerNav from '../BurgerNav/BurgerNav';
 import TopNav from '../TopNav/TopNav';
 
-const Nav = ({isOpen, setIsOpen}) => {
-  const pageWidth = window.innerWidth;
-  const [isBurger, setIsBurger] = useState(pageWidth < 1000 ? true : false);
+// on page load and whenever page is resized, run isBurger
 
-  const flipBurger = () => {
-    return pageWidth < 1050 ? setIsBurger(true) : setIsBurger(false)
+const Nav = ({isOpen, setIsOpen}) => {
+  const flipWidth = 1050;
+  const [isBurger, setIsBurger] = useState(window.innerWidth < flipWidth ? true : false);
+
+  const handleResize = () => {
+    window.innerWidth < flipWidth ? setIsBurger(true) : setIsBurger(false)
   }
 
-  useEffect(() => {
-    window.addEventListener('resize', flipBurger);
-    return () => {
-      window.removeEventListener('resize', flipBurger);
-    }
-  }, [isBurger])
+  window.addEventListener('resize', handleResize);
 
   return (
     <nav className='top-nav' >
