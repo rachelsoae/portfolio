@@ -247,14 +247,13 @@ button:hover,
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 .nav-wrapper h1 {
   margin: 0 0 0 2rem;
 }
 
 #logo {
-  object-fit: cover;
   margin: 1rem 0 0;
   width: 29rem;
 }
