@@ -34,7 +34,9 @@
 html,
 body,
 .root,
-.app {
+.app,
+main,
+.main-wrapper {
   margin: 0;
   min-height: 100vh;
 }
@@ -47,7 +49,10 @@ html {
 .app {
   position: relative;
   z-index: 0;
-  border-top: 5px solid #A3CBA5;
+}
+
+nav {
+  position: fixed;
 }
 
 main {
@@ -185,7 +190,7 @@ button:hover,
 }
 
 .hero-section {
-  height: 87vh;
+  height: 100%;
   width: 100%;
   display: flex;
 }
@@ -227,12 +232,13 @@ button:hover,
 }
 .hero-image-container img {
   width: 100%;
-  height: 87vh;
+  height: 100%;
   object-fit: cover;
 }
 
 .top-nav {
   background-color: #F5F5F5;
+  border-top: 5px solid #A3CBA5;
   min-width: 100%;
   display: flex;
   justify-content: center;

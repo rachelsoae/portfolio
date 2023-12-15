@@ -14,6 +14,9 @@ const Nav = ({isOpen, setIsOpen}) => {
 
   useEffect(() => {
     window.addEventListener('resize', flipBurger);
+    return () => {
+      window.removeEventListener('resize', flipBurger);
+    }
   }, [isBurger])
 
   return (
