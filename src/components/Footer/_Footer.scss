@@ -2,5 +2,35 @@
 @use '../../styles/mixins' as *;
 
 .footer {
-  height: 10rem;
+  background-color: $primary-text-color;
+  height: 20rem;
+  @include center-column;
+  justify-content: center;
+}
+
+.footer__socials {
+  width: 8%;
+  @include space-between;
+}
+
+.footer__social {
+  width: 3rem;
+}
+
+.footer__links {
+  width: 40%;
+  @include space-between;
+  margin: 2rem;
+}
+
+.footer__link {
+  @include header-font;
+  color: $secondary-text-color;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#footer__logo {
+  width: 15rem;
+  // margin: 1rem;
 }

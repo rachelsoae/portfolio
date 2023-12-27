@@ -3,20 +3,20 @@ import github from '../../assets/icons/github.png';
 
 const Contact = () => {
   return (
-    <div className='contact-section'>
+    <div className='contact'>
       <h2>Contact</h2>
-      <div className='email-container'>
+      <div className='contact__email-container'>
         <p>Email me at</p>
         <a href='mailto:rachelprather1@gmail.com'>
-          <p className='email'> rachelprather1@gmail.com</p>
+          <p className='contact__email'> rachelprather1@gmail.com</p>
         </a>
       </div>
-      <div className='social-icons-container'>
+      <div className='contact__socials-container'>
         <a href='https://www.linkedin.com/in/rachel-soae-prather'>
-          <img className='social-icon' src={linkedin} alt='LinkedIn' />
+          <img className='contact__social' src={linkedin} alt='LinkedIn' />
         </a>
         <a href='https://github.com/rachelsoae'>
-          <img className='social-icon' src={github} alt='GitHub' />
+          <img className='contact__social' src={github} alt='GitHub' />
         </a>
       </div>
     </div>

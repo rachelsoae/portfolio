@@ -1,14 +1,14 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.contact-section {
+.contact {
   @include center-column;
-  .email-container {
+  .contact__email-container {
     display: flex;
     align-items: center;
     margin-bottom: 2em;
   }
-  .email {
+  .contact__email {
     color: $primary-accent-color;
     margin-left: 1rem;
   }
@@ -18,13 +18,13 @@
   .email:hover {
     @include inline-link-hover;
   }
-  .social-icons-container {
+  .contact__socials-container {
     @include space-evenly;
     align-items: center;
     height: 10rem;
     width: 30%;
   }
-  img {
+  .contact__social {
     width: 5rem;
     transition: transform 0.05s ease-in-out;
   }

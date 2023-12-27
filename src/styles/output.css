@@ -102,7 +102,7 @@ button {
 
 button:hover {
   animation: button-fade 0.5s;
-  background-color: #A3CBA5;
+  background-color: #8eba9e;
   border: none;
   color: #183C19;
 }
@@ -142,7 +142,7 @@ button:hover,
 
 @keyframes button-fade {
   to {
-    background-color: #A3CBA5;
+    background-color: #8eba9e;
     border: none;
     color: #183C19;
   }
@@ -152,39 +152,39 @@ button:hover,
     width: 1400px;
   }
 }
-.contact-section {
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contact-section .email-container {
+.contact .contact__email-container {
   display: flex;
   align-items: center;
   margin-bottom: 2em;
 }
-.contact-section .email {
+.contact .contact__email {
   color: #47725d;
   margin-left: 1rem;
 }
-.contact-section a {
+.contact a {
   text-decoration: none;
 }
-.contact-section .email:hover {
+.contact .email:hover {
   text-decoration: underline;
   text-decoration-color: #47725d;
 }
-.contact-section .social-icons-container {
+.contact .contact__socials-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 10rem;
   width: 30%;
 }
-.contact-section img {
+.contact .contact__social {
   width: 5rem;
   transition: transform 0.05s ease-in-out;
 }
-.contact-section img:hover {
+.contact img:hover {
   transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
@@ -254,7 +254,7 @@ button:hover,
 }
 .top-nav {
   background-color: #F5F5F5;
-  border-top: 5px solid #A3CBA5;
+  border-top: 5px solid #8eba9e;
   min-width: 100%;
   display: flex;
   justify-content: center;
@@ -336,7 +336,7 @@ article {
 }
 
 .card-back {
-  border: 1.2rem #A3CBA5 solid;
+  border: 1.2rem #8eba9e solid;
   width: 50rem;
   height: 45rem;
 }
@@ -406,6 +406,48 @@ article {
 
 .hidden {
   visibility: hidden;
+}
+
+.footer {
+  background-color: #424242;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__socials {
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social {
+  width: 3rem;
+}
+
+.footer__links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.footer__link {
+  font-family: "Glacial Indifference", sans-serif;
+  color: #424242;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#footer__logo {
+  width: 15rem;
 }
 
 /*# sourceMappingURL=output.css.map */
