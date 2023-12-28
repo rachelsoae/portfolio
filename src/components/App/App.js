@@ -1,4 +1,5 @@
-import {Routes, Route} from 'react-router-dom';
+import {useState} from 'react';
+import {Routes, Route, Link} from 'react-router-dom';
 import Nav from '../Nav/Nav';
 import Home from '../Home/Home';
 import About from '../About/About';
@@ -7,35 +8,73 @@ import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className='app'>
-      <Nav />
-      <main>
-        <div className='main-wrapper'>
-          <Routes>
-            <Route 
-              path='/' 
-              element={<Home />}
-            />
-            <Route 
-              path='/about'
-              element={<About />}
-            />
-            <Route 
-              path='/contact'
-              element={<Contact />}
-            />
-            <Route 
-              path='/portfolio'
-              element={<Portfolio />}
-            />
-            <Route 
-              path='/error'
-            />
-          </Routes>
-        </div>
-       </main>
-      <Footer />
+        {isOpen ?
+        <nav className='menu'>
+          <span 
+            class='material-symbols-rounded' 
+            id='menu-exit' 
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            close
+          </span>
+          <div className='nav-buttons menu-buttons'>
+            <Link 
+              to='/' 
+              onClick={() => setIsOpen(!isOpen)} 
+              className='menu-button'
+            >Home</Link>
+            <Link 
+              to='/about' 
+              onClick={() => setIsOpen(!isOpen)}
+              className='menu-button'
+            >About</Link>
+            <Link 
+              to='/portfolio' 
+              onClick={() => setIsOpen(!isOpen)}
+              className='menu-button'
+            >Portfolio</Link>
+            <Link 
+              to='/contact' 
+              onClick={() => setIsOpen(!isOpen)}
+              className='menu-button'
+            >Contact</Link>
+          </div>
+        </nav>
+        :
+        <>
+          <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
+          <main>
+            <div className='main-wrapper'>
+              <Routes>
+                <Route 
+                  path='/' 
+                  element={<Home />}
+                />
+                <Route 
+                  path='/about'
+                  element={<About />}
+                />
+                <Route 
+                  path='/contact'
+                  element={<Contact />}
+                />
+                <Route 
+                  path='/portfolio'
+                  element={<Portfolio />}
+                />
+                <Route 
+                  path='/error'
+                />
+              </Routes>
+            </div>
+          </main>
+          <Footer />
+        </>
+      }
     </div>
   )
 }

@@ -2,5 +2,45 @@
 @use '../../styles/mixins' as *;
 
 .footer {
-  height: 10rem;
+  background-color: $primary-text-color;
+  height: 20rem;
+  @include center-column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.footer__social {
+  width: 3rem;
+  margin: 1.5rem;
+}
+
+.footer__links {
+  // width: 40%;
+  @include true-center;
+  // margin: 3rem;
+}
+
+.footer__link {
+  @include header-font;
+  color: $secondary-text-color;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 2rem 4rem;
+}
+
+#footer__logo {
+  width: 15rem;
+  margin: 1.5rem
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    height: 30rem;
+  }
+  .footer__links {
+    @include center-column;
+  }
+  .footer__link {
+    margin: 0.5rem;
+  }
 }

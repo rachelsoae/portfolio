@@ -1,5 +1,7 @@
 @use 'variables' as *;
 
+// LAYOUT
+
 @mixin true-center {
   display: flex;
   justify-content: center;
@@ -22,12 +24,31 @@
   justify-content: space-between;
 }
 
+// TYPOGRAPHY
+@mixin header-font {
+  font-family: $header-font;
+  color: $primary-text-color;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.5rem;
+}
+
+@mixin body-font {
+  font-family: $body-font;
+  color: $primary-text-color;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
 @mixin button-text {
   font-family: $button-font;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
+
+// BUTTON DESIGN
 
 @mixin button-box {
   width: 16.5rem;
@@ -46,26 +67,12 @@
   color: $primary-accent-color;
 }
 
+// HOVER STATES
+
 @mixin button-hover {
   background-color: $secondary-accent-color;
   border: none;
   color: $emphasis-text-color;
-}
-
-@mixin header-font {
-  font-family: $header-font;
-  color: $primary-text-color;
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-weight: 200;
-  letter-spacing: 0.5rem;
-}
-
-@mixin body-font {
-  font-family: $body-font;
-  color: $primary-text-color;
-  font-size: 2rem;
-  font-weight: 300;
 }
 
 @mixin link-hover {

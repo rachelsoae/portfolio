@@ -1,26 +1,23 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-nav {
+.top-nav {
   background-color: $primary-background-color;
   border-top: 5px solid $secondary-accent-color;
   min-width: 100%;
   display: flex;
   justify-content: center;
-  height: 8.5rem;
 }
 
 .nav-wrapper {
   @include space-between;
-  width: 90%;
+  width: 100%;
   h1 {
     margin: 0 0 0 2rem;
   }
 }
 
 #logo {
-  object-fit: cover;
-  height: 100%;
   margin: 1rem 0 0;
   width: 29rem;
 }
@@ -50,3 +47,4 @@ nav {
     width: 1440px
   }
 }
+

@@ -1,9 +1,23 @@
+import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/logo.png'
+import BurgerNav from '../BurgerNav/BurgerNav';
+import TopNav from '../TopNav/TopNav';
 
-const Nav = () => {
+// on page load and whenever page is resized, run isBurger
+
+const Nav = ({isOpen, setIsOpen}) => {
+  const flipWidth = 1050;
+  const [isBurger, setIsBurger] = useState(window.innerWidth < flipWidth ? true : false);
+
+  const handleResize = () => {
+    window.innerWidth < flipWidth ? setIsBurger(true) : setIsBurger(false)
+  }
+
+  window.addEventListener('resize', handleResize);
+
   return (
-    <nav>
+    <nav className='top-nav' >
       <div className='nav-wrapper'>
         <h1>
           <Link to='/'>
@@ -11,12 +25,7 @@ const Nav = () => {
           </Link>
         </h1>
         <div className='nav-buttons'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/portfolio'>Portfolio</Link>
-          <Link to='/contact'>
-            <button  className='primary-button'>Contact Me</button>
-          </Link>
+          {isBurger === true ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
         </div>
       </div>
     </nav>
@@ -24,3 +33,4 @@ const Nav = () => {
 }
 
 export default Nav;
+
