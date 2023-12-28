@@ -69,13 +69,9 @@ html {
   background-color: #F5F5F5;
 }
 
-.app {
-  position: relative;
-  z-index: 0;
-}
-
 nav {
   position: fixed;
+  z-index: 1;
 }
 
 main {
@@ -414,7 +410,6 @@ h1 {
 article {
   margin: 3rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -517,7 +512,6 @@ article {
 }
 @media screen and (max-width: 550px) {
   .card__front {
-    background-position: contain;
     width: 40rem;
     height: 45rem;
   }
@@ -535,7 +529,6 @@ article {
     height: 2.5rem;
   }
   .card__back .project__buttons-container {
-    position: absolute;
     bottom: 1rem;
     width: 95%;
   }

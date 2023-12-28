@@ -4,7 +4,6 @@
 article {
   margin: 3rem;
   box-shadow: $box-shadow;
-  position: relative;
   @include center-column;
   transition: transform 0.15s ease-in-out;
   border-radius: 4px;
@@ -93,7 +92,6 @@ article {
 
 @media screen and (max-width: 550px) {
   .card__front {
-    background-position: contain;
     width: 40rem;
     height: 45rem;
   }
@@ -110,7 +108,6 @@ article {
       height: 2.5rem;
     }
     .project__buttons-container {
-      position: absolute;
       bottom: 1rem;
       width: 95%;
     }
