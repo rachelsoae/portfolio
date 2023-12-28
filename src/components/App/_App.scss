@@ -78,15 +78,15 @@ button:hover,
   margin: 3rem;
 }
 
-#menu-exit {
+#menu__exit {
   align-self: flex-end;
 }
 
-.menu-buttons {
+.menu__buttons {
   @include center-column;
 }
 
-.menu-button {
+.menu__button {
   margin: 1rem;
 }
 @keyframes button-fade {
