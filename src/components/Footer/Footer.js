@@ -15,10 +15,10 @@ const Footer = () => {
         </a>
       </div>
       <div className='footer__links'>
-        <Link to='/home' className='footer__link'>Home</Link>
-        <Link to='/home' className='footer__link'>About</Link>
-        <Link to='/home' className='footer__link'>Portfolio</Link>
-        <Link to='/home' className='footer__link'>Contact</Link>
+        <Link to='/' className='footer__link'>Home</Link>
+        <Link to='/about' className='footer__link'>About</Link>
+        <Link to='/portfolio' className='footer__link'>Portfolio</Link>
+        <Link to='/contact' className='footer__link'>Contact</Link>
       </div>
       <img src={logoTransparent} alt='Rachel Soae Prather, Software Engineer' id='footer__logo' />
     </section>
