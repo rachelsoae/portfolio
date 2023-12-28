@@ -1,36 +1,63 @@
-.about-wrapper {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 12rem 0 0;
 }
 
-.about-content {
+.page-header {
+  margin: 2rem;
+}
+
+.about__content {
   display: flex;
   justify-content: space-evenly;
 }
 
-.about-image {
+.about__image {
   height: 50vh;
+  margin: 0 2rem 2rem;
 }
 
-.about-text {
+.about__text {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.about-text p {
+.about__text p {
   margin-bottom: 1rem;
 }
-.about-text a {
+.about__text a {
   color: #47725d;
   text-decoration: none;
 }
-.about-text a:hover {
+.about__text a:hover {
   text-decoration: underline;
   text-decoration-color: #47725d;
 }
 
+.about__resume {
+  margin: 6rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .about__content {
+    flex-wrap: wrap;
+  }
+  .about__image {
+    height: 40vh;
+  }
+  .about__text {
+    width: 90%;
+    text-align: center;
+  }
+  .about__resume {
+    margin: 3rem 0;
+    text-align: center;
+  }
+}
 html,
 body,
 .root,

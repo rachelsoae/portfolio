@@ -1,19 +1,25 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.about-wrapper {
+.about {
   @include center-column;
+  margin: 12rem 0 0;
 }
 
-.about-content {
+.page-header {
+  margin: 2rem;
+}
+
+.about__content {
   @include space-evenly;
 }
 
-.about-image {
+.about__image {
   height: 50vh;
+  margin: 0 2rem 2rem;
 }
 
-.about-text {
+.about__text {
   width: 50%;
   @include center-column;
   p {
@@ -25,5 +31,27 @@
   }
   a:hover {
     @include inline-link-hover;
+  }
+}
+
+.about__resume {
+  margin: 6rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .about__content {
+    flex-wrap: wrap;
+  }
+  .about__image {
+    height: 40vh;
+  }
+  .about__text {
+    width: 90%;
+    text-align: center;
+  }
+  .about__resume {
+    margin: 3rem 0;
+    text-align: center;
   }
 }
