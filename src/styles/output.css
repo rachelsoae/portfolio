@@ -260,12 +260,13 @@ button:hover,
   justify-content: center;
 }
 
-.nav-wrapper {
+.top-nav__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.nav-wrapper h1 {
+
+h1 {
   margin: 0 0 0 2rem;
 }
 
@@ -274,13 +275,13 @@ button:hover,
   width: 29rem;
 }
 
-.nav-buttons {
+.top-nav__buttons {
   display: flex;
   align-items: center;
   height: 100%;
   margin-right: 2rem;
 }
-.nav-buttons a {
+.top-nav__buttons a {
   font-family: "Glacial Indifference", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
@@ -289,11 +290,11 @@ button:hover,
   color: #183C19;
   transition: transform 0.05s ease-in-out;
 }
-.nav-buttons a,
-.nav-buttons a:active {
+.top-nav__buttons a,
+.top-nav__buttons a:active {
   text-decoration: none;
 }
-.nav-buttons a:hover {
+.top-nav__buttons a:hover {
   transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
@@ -301,6 +302,19 @@ button:hover,
 @media screen and (min-width: 1440px) {
   .nav-wrapper {
     width: 1440px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    margin: 0 0 0 1rem;
+  }
+  #logo {
+    width: 20rem;
   }
 }
 .projects-section {

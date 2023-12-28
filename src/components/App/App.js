@@ -21,7 +21,7 @@ const App = () => {
           >
             close
           </span>
-          <div className='nav-buttons menu-buttons'>
+          <div className='top-nav__buttons menu-buttons'>
             <Link 
               to='/' 
               onClick={() => setIsOpen(!isOpen)} 

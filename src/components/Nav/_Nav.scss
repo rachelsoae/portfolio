@@ -9,12 +9,13 @@
   justify-content: center;
 }
 
-.nav-wrapper {
+.top-nav__wrapper {
   @include space-between;
   width: 100%;
-  h1 {
-    margin: 0 0 0 2rem;
-  }
+}
+
+h1 {
+  margin: 0 0 0 2rem;
 }
 
 #logo {
@@ -22,7 +23,7 @@
   width: 29rem;
 }
 
-.nav-buttons {
+.top-nav__buttons {
   display: flex;
   align-items: center;
   height: 100%;
@@ -45,6 +46,24 @@
 @media screen and (min-width: 1440px) {
   .nav-wrapper {
     width: 1440px
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    margin: 0 0 0 1rem;
+  }
+  // .top-nav__buttons {
+  //   margin-right: 0.5rem
+  // }
+  #logo {
+    width: 20rem;
   }
 }
 
