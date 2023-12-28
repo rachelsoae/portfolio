@@ -1,13 +1,12 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.hero-section {
-  height: 100%;
+.hero {
   width: 100%;
   display: flex;
 }
 
-.hero-text-container {
+.hero__text-container {
   width: 60%;
   @include true-center;
   h2 {
@@ -19,11 +18,11 @@
   }
 }
 
-.hero-text-wrapper {
+.hero__text-wrapper {
   display: flex;
   flex-direction: column;
   margin: 8rem;
-  .buttons-container {
+  .hero__buttons-container {
     display: flex;
     align-items: center;
     margin: 3rem 0;
@@ -36,7 +35,7 @@
   }
 }
 
-.hero-image-container {
+.hero__image-container {
   width: 40%;
   img {
     width: 100%;
@@ -46,19 +45,67 @@
 }
 
 @media screen and (max-width: 950px) {
-  .hero-text-wrapper {
+  .hero__text-wrapper {
     margin: 8rem 4rem;
   } 
 }
 
 @media screen and (max-width: 780px) {
-  .hero-text-wrapper {
-    margin: 8rem 2rem;
+  .hero__text-container {
+    width: 65%;
+  }
+  .hero__text-wrapper {
+    margin: 12rem 2rem;
+    text-align: center;
     h2 {
       font-size: 2.8rem;
     }
     p {
       font-size: 2.2rem;
     }
+  }
+  .hero__buttons-container {
+    @include center-column;
+    button {
+      margin: 1rem;
+    }
+  }
+  .hero__image-container {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__text-wrapper {
+    text-align: center;
+    h2 {
+      font-size: 2.6rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-image: url("../assets/philomena.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include true-center;
+  }
+  .hero__image-container {
+    display: none;
+  }
+  .hero__text-container {
+    background-color: #F5F5F590;
+    height: 100%;
+    width: 100%;
+  }
+  .hero__text-wrapper {
+    background-color: #F5F5F590;
+    width: 100%;
+    height: 100%;
+    // padding: 1.5rem;
   }
 }

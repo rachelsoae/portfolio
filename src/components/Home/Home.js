@@ -3,13 +3,12 @@ import {Link} from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className='hero-section'>
-      <div className='hero-text-container'>
-        <section className='hero-text-wrapper'>
-          <h2>Software Engineer | Web Developer</h2>
-          <p>Building technology that builds community.</p>
-          <p>Let’s create something together.</p>
-          <div className='buttons-container'>
+    <div className='hero'>
+      <div className='hero__text-container'>
+        <section className='hero__text-wrapper'>
+          <h2>Software Engineer & Web Developer</h2>
+          <p> Building technology that builds community. Let’s create something meaningful together.</p>
+          <div className='hero__buttons-container'>
             <Link to='/contact'>
               <button className='primary-button'>Contact Me</button>
             </Link>
@@ -19,7 +18,7 @@ const Home = () => {
           </div>
         </section>
       </div>
-      <div className='hero-image-container'>
+      <div className='hero__image-container'>
         <img 
           src={philomena} 
           alt='a fiddle-leaf fig grows skyward against an off-white backdrop'
