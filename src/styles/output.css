@@ -396,13 +396,13 @@ h1 {
     width: 20rem;
   }
 }
-.projects-section {
-  height: 100%;
+.portfolio {
+  margin: 12rem 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.projects-section .projects {
+.portfolio .portfolio__projects {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
