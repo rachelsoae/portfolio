@@ -41,14 +41,13 @@
   font-weight: 300;
 }
 
+// BUTTON DESIGN
 @mixin button-text {
   font-family: $button-font;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
-
-// BUTTON DESIGN
 
 @mixin button-box {
   width: 16.5rem;

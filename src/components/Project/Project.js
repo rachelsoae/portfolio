@@ -36,7 +36,7 @@ const Project = ({project}) => {
     <>
       {isFront ?
       <article 
-        className='card-front' 
+        className='card__front' 
         style={{
           backgroundImage: isFront && `url(${img})`,
           backgroundSize: isFront && 'cover',
@@ -47,42 +47,40 @@ const Project = ({project}) => {
       </article>
       :
       <article 
-        className='card-back'
+        className='card__back'
         onMouseLeave={() => flipCard()}
       >
-      <h3>{name}</h3>
-        <p>{tagline}</p>
+      <h3 className='card__title'>{name}</h3>
+        <p className='card__tagline'>{tagline}</p>
         <div className='tech'>
           {techs.map(tech => {
             return (
-              <div key={tech} className='tech-icon-container'>
-                <img src={ICONS[tech]} alt={tech} />
-                <p>{tech}</p>   
+              <div key={tech} className='tech__icon-container'>
+                <img className='tech__icon' src={ICONS[tech]} alt={tech} />
+                <p className='tech__label'>{tech}</p>   
               </div>
             )
           })}
         </div>
         {name === 'Humor Me' ?
-          <div className='project-buttons-container'>
+          <div className='project__buttons-container'>
             <a href={deployedLink}>
-              <button className='primary-button'>View Live</button>
+              <button className='primary-button card__button'>View Live</button>
             </a>
-            <div className='humor-me-buttons'>
-              <a href={repoLinkFE}>
-                <button className='primary-button'>GitHub (FE)</button>
-              </a>
-              <a href={repoLinkBE}>
-                <button className='primary-button'>GitHub (BE)</button>
-              </a>
-            </div>
+            <a href={repoLinkFE}>
+              <button className='primary-button card__button'>GitHub (FE)</button>
+            </a>
+            <a href={repoLinkBE}>
+              <button className='primary-button card__button'>GitHub (BE)</button>
+            </a>
           </div>
           :
-          <div className='project-buttons-container'>
+          <div className='project__buttons-container'>
             <a href={deployedLink}>
-              <button className='primary-button'>View Live</button>
+              <button className='primary-button card__button'>View Live</button>
             </a>
             <a href={repoLink}>
-              <button className='primary-button'>GitHub</button>
+              <button className='primary-button card__button'>GitHub</button>
             </a>
           </div> 
         }

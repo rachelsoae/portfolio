@@ -10,21 +10,21 @@ article {
   border-radius: 4px;
 }
 
-.card-front {
+.card__front {
   border: none;
   width: 52.4rem;
   height: 47.4rem;
 }
 
-.card-back {
+.card__back {
   border: 1.2rem $secondary-accent-color solid;
   width: 50rem;
   height: 45rem;
-  h3 {
+  .card__title {
     @include button-text;
     margin-top: 2.5rem;
   }
-  p {
+  .card__tagline {
     @include body-font;
     width: 80%;
     margin: 0;
@@ -35,42 +35,104 @@ article {
     flex-wrap: wrap;
     margin: 2rem;
   }
-  .tech-icon-container {
+  .tech__icon-container {
     @include center-column;
     width: 9rem;
     margin-top: 1rem;
-    img {
-      height: 3.5rem;
-      margin: 0.5rem;
-    }
-    p {
-      @include button-text;
-      font-size: 1rem;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
   }
-  .project-buttons-container {
+  .tech__icon {
+    height: 3.5rem;
+    margin: 0.5rem;
+  }
+  .tech__label {
+    @include button-text;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .project__buttons-container {
     position: absolute;
     bottom: 3rem;
-    width: 90%;
+    width: 95%;
     @include space-evenly;
-    flex-wrap: wrap;
-    .humor-me-buttons {
-      width: 100%;
-      @include space-evenly;
-      margin-top: 2rem;
-    }
   }
 }
 
-.card-back:hover,
-.card-front:hover {
+.card__button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.8rem;
+}
+
+.card__back:hover,
+.card__front:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.15s ease-in-out;
 }
 
-.hidden {
-  visibility: hidden;
+@media screen and (max-width: 1200px) {
+  .card__front {
+    width: 45.4rem;
+    height: 40.4rem;
+  }
+  .card__back {
+    width: 43rem;
+    height: 38rem;
+    .card__tagline {
+      font-size: 1.6rem;
+    }
+    .tech {
+      width: 85%;
+    }
+    .tech__icon {
+      height: 2.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card__front {
+    background-position: contain;
+    width: 40rem;
+    height: 45rem;
+  }
+  .card__back {
+    width: 36rem;
+    height: 40rem;
+    .card__tagline {
+      width: 85%;
+    }
+    .tech {
+      width: 95%;
+    }
+    .tech__icon {
+      height: 2.5rem;
+    }
+    .project__buttons-container {
+      position: absolute;
+      bottom: 1rem;
+      width: 95%;
+    }
+  }
+  .card__button {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card__front {
+    height: 48rem;
+  }
+  .card__back {
+    height: 43rem;
+  }
+  .project__buttons-container {
+    flex-wrap: wrap;
+    button {
+      margin: 0.5rem 0;
+    }
+  }
 }

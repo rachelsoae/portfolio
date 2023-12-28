@@ -5,10 +5,6 @@
   margin: 12rem 0 0;
 }
 
-.page-header {
-  margin: 2rem;
-}
-
 .about__content {
   display: flex;
   justify-content: space-evenly;
@@ -174,6 +170,10 @@ button:hover,
     color: #183C19;
   }
 }
+.page-header {
+  margin: 2rem;
+}
+
 @media screen and (min-width: 1400px) {
   .main__wrapper {
     width: 1400px;
@@ -422,25 +422,25 @@ article {
   border-radius: 4px;
 }
 
-.card-front {
+.card__front {
   border: none;
   width: 52.4rem;
   height: 47.4rem;
 }
 
-.card-back {
+.card__back {
   border: 1.2rem #8eba9e solid;
   width: 50rem;
   height: 45rem;
 }
-.card-back h3 {
+.card__back .card__title {
   font-family: "Glacial Indifference", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   margin-top: 2.5rem;
 }
-.card-back p {
+.card__back .card__tagline {
   font-family: "Inter", sans-serif;
   color: #424242;
   font-size: 2rem;
@@ -448,25 +448,25 @@ article {
   width: 80%;
   margin: 0;
 }
-.card-back .tech {
+.card__back .tech {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 2rem;
 }
-.card-back .tech-icon-container {
+.card__back .tech__icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 9rem;
   margin-top: 1rem;
 }
-.card-back .tech-icon-container img {
+.card__back .tech__icon {
   height: 3.5rem;
   margin: 0.5rem;
 }
-.card-back .tech-icon-container p {
+.card__back .tech__label {
   font-family: "Glacial Indifference", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
@@ -475,32 +475,90 @@ article {
   text-align: center;
   margin-bottom: 1rem;
 }
-.card-back .project-buttons-container {
+.card__back .project__buttons-container {
   position: absolute;
   bottom: 3rem;
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.card-back .project-buttons-container .humor-me-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
 }
 
-.card-back:hover,
-.card-front:hover {
+.card__button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.8rem;
+}
+
+.card__back:hover,
+.card__front:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.15s ease-in-out;
 }
 
-.hidden {
-  visibility: hidden;
+@media screen and (max-width: 1200px) {
+  .card__front {
+    width: 45.4rem;
+    height: 40.4rem;
+  }
+  .card__back {
+    width: 43rem;
+    height: 38rem;
+  }
+  .card__back .card__tagline {
+    font-size: 1.6rem;
+  }
+  .card__back .tech {
+    width: 85%;
+  }
+  .card__back .tech__icon {
+    height: 2.8rem;
+  }
 }
-
+@media screen and (max-width: 550px) {
+  .card__front {
+    background-position: contain;
+    width: 40rem;
+    height: 45rem;
+  }
+  .card__back {
+    width: 36rem;
+    height: 40rem;
+  }
+  .card__back .card__tagline {
+    width: 85%;
+  }
+  .card__back .tech {
+    width: 95%;
+  }
+  .card__back .tech__icon {
+    height: 2.5rem;
+  }
+  .card__back .project__buttons-container {
+    position: absolute;
+    bottom: 1rem;
+    width: 95%;
+  }
+  .card__button {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .card__front {
+    height: 48rem;
+  }
+  .card__back {
+    height: 43rem;
+  }
+  .project__buttons-container {
+    flex-wrap: wrap;
+  }
+  .project__buttons-container button {
+    margin: 0.5rem 0;
+  }
+}
 .footer {
   background-color: #424242;
   height: 20rem;
