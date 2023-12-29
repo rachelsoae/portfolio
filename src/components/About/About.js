@@ -26,9 +26,9 @@ const About = () => {
           </p>
         </section>
       </div>
-      <section className='about__resume'>
+      {/* <section className='about__resume'>
         <p>Virtual resume coming soon!</p>
-      </section>
+      </section> */}
     </div>
   )
 }

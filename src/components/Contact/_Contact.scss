@@ -7,16 +7,13 @@
   .contact__email-container {
     display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    margin: 2rem 0 2em;
   }
   .contact__email {
     color: $primary-accent-color;
     margin-left: 1rem;
   }
-  a {
-    text-decoration: none;
-  }
-  .email:hover {
+  .contact__email:hover {
     @include inline-link-hover;
   }
   .contact__socials-container {

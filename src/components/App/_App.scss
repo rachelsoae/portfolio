@@ -55,6 +55,10 @@ button:hover {
   @include button-hover;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover,
 button:hover,
 .material-symbols-rounded:hover {
@@ -92,11 +96,5 @@ button:hover,
 }
 
 .page-header {
-  margin: 2rem;
+  margin: 3rem;
 }
-
-// @media screen and (min-width: 1400px) {
-//   .main__wrapper {
-//     width: 1400px
-//   }
-// }

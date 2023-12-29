@@ -6,8 +6,10 @@
 }
 
 .about__content {
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
 .about__image {
@@ -16,26 +18,22 @@
 }
 
 .about__text {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .about__text p {
   margin-bottom: 1rem;
 }
-.about__text a {
+
+#contact-link {
   color: #47725d;
   text-decoration: none;
 }
-.about__text a:hover {
+
+#contact-link:hover {
   text-decoration: underline;
   text-decoration-color: #47725d;
-}
-
-.about__resume {
-  margin: 6rem;
-  text-align: center;
 }
 
 @media screen and (max-width: 550px) {
@@ -47,10 +45,6 @@
   }
   .about__text {
     width: 90%;
-    text-align: center;
-  }
-  .about__resume {
-    margin: 3rem 0;
     text-align: center;
   }
 }
@@ -126,6 +120,10 @@ button:hover {
   color: #183C19;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover,
 button:hover,
 .material-symbols-rounded:hover {
@@ -167,7 +165,7 @@ button:hover,
   }
 }
 .page-header {
-  margin: 2rem;
+  margin: 3rem;
 }
 
 .contact {
@@ -179,16 +177,13 @@ button:hover,
 .contact .contact__email-container {
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
+  margin: 2rem 0 2em;
 }
 .contact .contact__email {
   color: #47725d;
   margin-left: 1rem;
 }
-.contact a {
-  text-decoration: none;
-}
-.contact .email:hover {
+.contact .contact__email:hover {
   text-decoration: underline;
   text-decoration-color: #47725d;
 }

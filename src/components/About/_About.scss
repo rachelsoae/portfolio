@@ -7,7 +7,9 @@
 }
 
 .about__content {
+  width: 80%;
   @include space-evenly;
+  margin-top: 2rem;
 }
 
 .about__image {
@@ -16,24 +18,27 @@
 }
 
 .about__text {
-  width: 50%;
-  @include center-column;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   p {
     margin-bottom: 1rem;
   }
-  a {
-    color: $primary-accent-color;
-    text-decoration: none;
-  }
-  a:hover {
-    @include inline-link-hover;
-  }
 }
 
-.about__resume {
-  margin: 6rem;
-  text-align: center;
+#contact-link {
+  color: $primary-accent-color;
+  text-decoration: none;
 }
+
+#contact-link:hover {
+  @include inline-link-hover;
+}
+
+// .about__resume {
+//   margin: 6rem;
+//   text-align: center;
+// }
 
 @media screen and (max-width: 550px) {
   .about__content {
@@ -46,8 +51,8 @@
     width: 90%;
     text-align: center;
   }
-  .about__resume {
-    margin: 3rem 0;
-    text-align: center;
-  }
+  // .about__resume {
+  //   margin: 3rem 0;
+  //   text-align: center;
+  // }
 }
