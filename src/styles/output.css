@@ -138,28 +138,6 @@ button:hover,
   font-size: 3rem;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  margin: 3rem;
-}
-
-#menu__exit {
-  align-self: flex-end;
-}
-
-.menu__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu__button {
-  margin: 1rem;
-}
-
 @keyframes button-fade {
   to {
     background-color: #8eba9e;
