@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const About = () => {
   return (
     <div className='about'>
-      <h2 className='page-header'>About</h2>
+      <h1 className='page-header'>About</h1>
       <div className='about__content'>
         <img 
           className='about__image'

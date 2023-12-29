@@ -50,13 +50,13 @@ const Project = ({project}) => {
         className='card__back'
         onMouseLeave={() => flipCard()}
       >
-      <h3 className='card__title'>{name}</h3>
+      <h2 className='card__title'>{name}</h2>
         <p className='card__tagline'>{tagline}</p>
         <div className='tech'>
           {techs.map(tech => {
             return (
               <div key={tech} className='tech__icon-container'>
-                <img className='tech__icon' src={ICONS[tech]} alt={tech} />
+                <img className='tech__icon' src={ICONS[tech]} alt="" />
                 <p className='tech__label'>{tech}</p>   
               </div>
             )

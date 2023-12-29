@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/logo.png'
 import BurgerNav from '../BurgerNav/BurgerNav';
@@ -17,11 +17,9 @@ const Nav = ({isOpen, setIsOpen}) => {
   return (
     <nav className='top-nav' >
       <div className='top-nav__wrapper'>
-        <h1>
-          <Link to='/'>
-            <img src={logo} id='logo' alt='Rachel Soae Prather, Software Engineer' />
-          </Link>
-        </h1>
+        <Link to='/'>
+          <img src={logo} id='logo' alt='Rachel Soae Prather, Software Engineer' />
+        </Link>
         <div className='top-nav__buttons'>
           {isBurger === true ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
         </div>

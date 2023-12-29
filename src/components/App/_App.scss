@@ -30,9 +30,12 @@ main {
   }
 }
 
-h2 {
+h1 {
   @include header-font;
-  margin: 2em 0;
+}
+
+.page-header {
+  margin: 3rem;
 }
 
 p {
@@ -95,6 +98,3 @@ button:hover,
   }
 }
 
-.page-header {
-  margin: 3rem;
-}

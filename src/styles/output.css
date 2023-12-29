@@ -77,14 +77,17 @@ main .main-wrapper {
   width: 100%;
 }
 
-h2 {
+h1 {
   font-family: "Glacial Indifference", sans-serif;
   color: #424242;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 200;
   letter-spacing: 0.5rem;
-  margin: 2em 0;
+}
+
+.page-header {
+  margin: 3rem;
 }
 
 p {
@@ -164,10 +167,6 @@ button:hover,
     color: #183C19;
   }
 }
-.page-header {
-  margin: 3rem;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
@@ -227,7 +226,7 @@ button:hover,
   justify-content: center;
   align-items: center;
 }
-.hero__text-container h2 {
+.hero__text-container h1 {
   margin-bottom: 3rem;
 }
 .hero__text-container p {
@@ -348,12 +347,8 @@ button:hover,
   width: 100%;
 }
 
-h1 {
-  margin: 0 0 0 2rem;
-}
-
 #logo {
-  margin: 1rem 0 0;
+  margin: 1rem 0 0 2rem;
   width: 29rem;
 }
 
