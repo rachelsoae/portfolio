@@ -9,7 +9,7 @@
   width: 80%;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 2rem;
+  margin: 2rem 0 4rem;
 }
 
 .about__image {
@@ -36,7 +36,7 @@
   text-decoration-color: #47725d;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .about__content {
     flex-wrap: wrap;
   }

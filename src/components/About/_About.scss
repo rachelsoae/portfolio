@@ -9,7 +9,7 @@
 .about__content {
   width: 80%;
   @include space-evenly;
-  margin-top: 2rem;
+  margin: 2rem 0 4rem;
 }
 
 .about__image {
@@ -40,7 +40,7 @@
 //   text-align: center;
 // }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .about__content {
     flex-wrap: wrap;
   }
