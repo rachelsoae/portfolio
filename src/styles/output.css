@@ -1,36 +1,53 @@
-.about-wrapper {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 12rem 0 0;
 }
 
-.about-content {
+.about__content {
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
+  margin: 2rem 0 4rem;
 }
 
-.about-image {
+.about__image {
   height: 50vh;
+  margin: 0 2rem 2rem;
 }
 
-.about-text {
-  width: 50%;
+.about__text {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.about-text p {
+.about__text p {
   margin-bottom: 1rem;
 }
-.about-text a {
+
+#contact-link {
   color: #47725d;
   text-decoration: none;
 }
-.about-text a:hover {
+
+#contact-link:hover {
   text-decoration: underline;
   text-decoration-color: #47725d;
 }
 
+@media screen and (max-width: 600px) {
+  .about__content {
+    flex-wrap: wrap;
+  }
+  .about__image {
+    height: 40vh;
+  }
+  .about__text {
+    width: 90%;
+    text-align: center;
+  }
+}
 html,
 body,
 .root,
@@ -46,13 +63,9 @@ html {
   background-color: #F5F5F5;
 }
 
-.app {
-  position: relative;
-  z-index: 0;
-}
-
 nav {
   position: fixed;
+  z-index: 1;
 }
 
 main {
@@ -107,6 +120,10 @@ button:hover {
   color: #183C19;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover,
 button:hover,
 .material-symbols-rounded:hover {
@@ -126,17 +143,17 @@ button:hover,
   margin: 3rem;
 }
 
-#menu-exit {
+#menu__exit {
   align-self: flex-end;
 }
 
-.menu-buttons {
+.menu__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.menu-button {
+.menu__button {
   margin: 1rem;
 }
 
@@ -147,29 +164,26 @@ button:hover,
     color: #183C19;
   }
 }
-@media screen and (min-width: 1400px) {
-  .main__wrapper {
-    width: 1400px;
-  }
+.page-header {
+  margin: 3rem;
 }
+
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 12rem 0 0;
 }
 .contact .contact__email-container {
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
+  margin: 2rem 0 2em;
 }
 .contact .contact__email {
   color: #47725d;
   margin-left: 1rem;
 }
-.contact a {
-  text-decoration: none;
-}
-.contact .email:hover {
+.contact .contact__email:hover {
   text-decoration: underline;
   text-decoration-color: #47725d;
 }
@@ -189,67 +203,135 @@ button:hover,
   transition: transform 0.05s ease-in-out;
 }
 
-.hero-section {
+@media screen and (max-width: 650px) {
+  .contact .contact__socials-container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact__email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.hero {
   height: 100%;
   width: 100%;
   display: flex;
 }
 
-.hero-text-container {
+.hero__text-container {
   width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero-text-container h2 {
+.hero__text-container h2 {
   margin-bottom: 3rem;
 }
-.hero-text-container p {
+.hero__text-container p {
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
 }
 
-.hero-text-wrapper {
+.hero__text-wrapper {
   display: flex;
   flex-direction: column;
   margin: 8rem;
 }
-.hero-text-wrapper .buttons-container {
+.hero__text-wrapper .hero__buttons-container {
   display: flex;
   align-items: center;
   margin: 3rem 0;
 }
-.hero-text-wrapper .buttons-container button {
+.hero__text-wrapper .hero__buttons-container button {
   margin-right: 2rem;
 }
-.hero-text-wrapper .buttons-container button:hover {
+.hero__text-wrapper .hero__buttons-container button:hover {
   transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
 
-.hero-image-container {
+.hero__image-container {
   width: 40%;
 }
-.hero-image-container img {
+.hero__image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (max-width: 950px) {
-  .hero-text-wrapper {
+  .hero__text-wrapper {
     margin: 8rem 4rem;
   }
 }
 @media screen and (max-width: 780px) {
-  .hero-text-wrapper {
-    margin: 8rem 2rem;
+  .hero__text-container {
+    width: 65%;
   }
-  .hero-text-wrapper h2 {
+  .hero__text-wrapper {
+    margin: 12rem 2rem;
+    text-align: center;
+  }
+  .hero__text-wrapper h2 {
     font-size: 2.8rem;
   }
-  .hero-text-wrapper p {
+  .hero__text-wrapper p {
     font-size: 2.2rem;
+  }
+  .hero__buttons-container {
+    justify-content: center;
+  }
+  .hero__image-container {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .hero {
+    background-image: url("../assets/philomena.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__image-container {
+    display: none;
+  }
+  .hero__text-container {
+    background-color: rgba(245, 245, 245, 0.5647058824);
+    height: 100%;
+    width: 100%;
+  }
+  .hero__text-wrapper {
+    background-color: rgba(245, 245, 245, 0.8392156863);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__text-wrapper {
+    margin: 12rem 2rem;
+    text-align: center;
+  }
+  .hero__text-wrapper h2 {
+    font-size: 2.5rem;
+  }
+  .hero__text-wrapper p {
+    font-size: 2rem;
+  }
+  .hero__buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__buttons-container button {
+    margin: 1rem;
   }
 }
 .top-nav {
@@ -260,12 +342,13 @@ button:hover,
   justify-content: center;
 }
 
-.nav-wrapper {
+.top-nav__wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.nav-wrapper h1 {
+
+h1 {
   margin: 0 0 0 2rem;
 }
 
@@ -274,13 +357,13 @@ button:hover,
   width: 29rem;
 }
 
-.nav-buttons {
+.top-nav__buttons {
   display: flex;
   align-items: center;
   height: 100%;
   margin-right: 2rem;
 }
-.nav-buttons a {
+.top-nav__buttons a {
   font-family: "Glacial Indifference", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
@@ -289,11 +372,11 @@ button:hover,
   color: #183C19;
   transition: transform 0.05s ease-in-out;
 }
-.nav-buttons a,
-.nav-buttons a:active {
+.top-nav__buttons a,
+.top-nav__buttons a:active {
   text-decoration: none;
 }
-.nav-buttons a:hover {
+.top-nav__buttons a:hover {
   transform: scale(1.1);
   transition: transform 0.05s ease-in-out;
 }
@@ -303,13 +386,26 @@ button:hover,
     width: 1440px;
   }
 }
-.projects-section {
-  height: 100%;
+@media screen and (max-width: 600px) {
+  #logo {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    margin: 0 0 0 1rem;
+  }
+  #logo {
+    width: 20rem;
+  }
+}
+.portfolio {
+  margin: 12rem 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.projects-section .projects {
+.portfolio .portfolio__projects {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -321,7 +417,6 @@ button:hover,
 article {
   margin: 3rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,25 +424,25 @@ article {
   border-radius: 4px;
 }
 
-.card-front {
+.card__front {
   border: none;
   width: 52.4rem;
   height: 47.4rem;
 }
 
-.card-back {
+.card__back {
   border: 1.2rem #8eba9e solid;
   width: 50rem;
   height: 45rem;
 }
-.card-back h3 {
+.card__back .card__title {
   font-family: "Glacial Indifference", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   margin-top: 2.5rem;
 }
-.card-back p {
+.card__back .card__tagline {
   font-family: "Inter", sans-serif;
   color: #424242;
   font-size: 2rem;
@@ -355,25 +450,25 @@ article {
   width: 80%;
   margin: 0;
 }
-.card-back .tech {
+.card__back .tech {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 2rem;
 }
-.card-back .tech-icon-container {
+.card__back .tech__icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 9rem;
   margin-top: 1rem;
 }
-.card-back .tech-icon-container img {
+.card__back .tech__icon {
   height: 3.5rem;
   margin: 0.5rem;
 }
-.card-back .tech-icon-container p {
+.card__back .tech__label {
   font-family: "Glacial Indifference", sans-serif;
   font-size: 2rem;
   letter-spacing: 0.0625rem;
@@ -382,32 +477,88 @@ article {
   text-align: center;
   margin-bottom: 1rem;
 }
-.card-back .project-buttons-container {
+.card__back .project__buttons-container {
   position: absolute;
   bottom: 3rem;
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.card-back .project-buttons-container .humor-me-buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 2rem;
 }
 
-.card-back:hover,
-.card-front:hover {
+.card__button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.8rem;
+}
+
+.card__back:hover,
+.card__front:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.15s ease-in-out;
 }
 
-.hidden {
-  visibility: hidden;
+@media screen and (max-width: 1200px) {
+  .card__front {
+    width: 45.4rem;
+    height: 40.4rem;
+  }
+  .card__back {
+    width: 43rem;
+    height: 38rem;
+  }
+  .card__back .card__tagline {
+    font-size: 1.6rem;
+  }
+  .card__back .tech {
+    width: 85%;
+  }
+  .card__back .tech__icon {
+    height: 2.8rem;
+  }
 }
-
+@media screen and (max-width: 550px) {
+  .card__front {
+    width: 40rem;
+    height: 45rem;
+  }
+  .card__back {
+    width: 36rem;
+    height: 40rem;
+  }
+  .card__back .card__tagline {
+    width: 85%;
+  }
+  .card__back .tech {
+    width: 95%;
+  }
+  .card__back .tech__icon {
+    height: 2.5rem;
+  }
+  .card__back .project__buttons-container {
+    bottom: 1rem;
+    width: 95%;
+  }
+  .card__button {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .card__front {
+    height: 48rem;
+  }
+  .card__back {
+    height: 43rem;
+  }
+  .project__buttons-container {
+    flex-wrap: wrap;
+  }
+  .project__buttons-container button {
+    margin: 0.5rem 0;
+  }
+}
 .footer {
   background-color: #424242;
   height: 20rem;

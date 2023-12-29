@@ -1,10 +1,10 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.projects-section {
-  height: 100%;
+.portfolio {
+  margin: 12rem 0 0;
   @include center-column;
-  .projects {
+  .portfolio__projects {
     @include space-evenly;
     width: 100%;
     flex-wrap: wrap;

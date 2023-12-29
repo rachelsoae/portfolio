@@ -42,9 +42,9 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='projects-section'>
-      <h2>Portfolio</h2>
-      <section className='projects'>
+    <div className='portfolio'>
+      <h2 className='page-header'>Portfolio</h2>
+      <section className='portfolio__projects'>
         {PROJECTS.map(project => <Project key={project.id} project={project} />)}
       </section>
     </div>

@@ -3,19 +3,17 @@
 
 .contact {
   @include center-column;
+  margin: 12rem 0 0;
   .contact__email-container {
     display: flex;
     align-items: center;
-    margin-bottom: 2em;
+    margin: 2rem 0 2em;
   }
   .contact__email {
     color: $primary-accent-color;
     margin-left: 1rem;
   }
-  a {
-    text-decoration: none;
-  }
-  .email:hover {
+  .contact__email:hover {
     @include inline-link-hover;
   }
   .contact__socials-container {
@@ -30,5 +28,19 @@
   }
   img:hover{
     @include link-hover;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact {
+    .contact__socials-container {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact__email-container {
+    @include center-column;
   }
 }

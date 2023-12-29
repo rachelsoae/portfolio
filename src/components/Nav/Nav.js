@@ -4,8 +4,6 @@ import logo from '../../assets/logo.png'
 import BurgerNav from '../BurgerNav/BurgerNav';
 import TopNav from '../TopNav/TopNav';
 
-// on page load and whenever page is resized, run isBurger
-
 const Nav = ({isOpen, setIsOpen}) => {
   const flipWidth = 1050;
   const [isBurger, setIsBurger] = useState(window.innerWidth < flipWidth ? true : false);
@@ -18,13 +16,13 @@ const Nav = ({isOpen, setIsOpen}) => {
 
   return (
     <nav className='top-nav' >
-      <div className='nav-wrapper'>
+      <div className='top-nav__wrapper'>
         <h1>
           <Link to='/'>
             <img src={logo} id='logo' alt='Rachel Soae Prather, Software Engineer' />
           </Link>
         </h1>
-        <div className='nav-buttons'>
+        <div className='top-nav__buttons'>
           {isBurger === true ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
         </div>
       </div>

@@ -1,29 +1,58 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
-.about-wrapper {
+.about {
   @include center-column;
+  margin: 12rem 0 0;
 }
 
-.about-content {
+.about__content {
+  width: 80%;
   @include space-evenly;
+  margin: 2rem 0 4rem;
 }
 
-.about-image {
+.about__image {
   height: 50vh;
+  margin: 0 2rem 2rem;
 }
 
-.about-text {
-  width: 50%;
-  @include center-column;
+.about__text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   p {
     margin-bottom: 1rem;
   }
-  a {
-    color: $primary-accent-color;
-    text-decoration: none;
+}
+
+#contact-link {
+  color: $primary-accent-color;
+  text-decoration: none;
+}
+
+#contact-link:hover {
+  @include inline-link-hover;
+}
+
+// .about__resume {
+//   margin: 6rem;
+//   text-align: center;
+// }
+
+@media screen and (max-width: 600px) {
+  .about__content {
+    flex-wrap: wrap;
   }
-  a:hover {
-    @include inline-link-hover;
+  .about__image {
+    height: 40vh;
   }
+  .about__text {
+    width: 90%;
+    text-align: center;
+  }
+  // .about__resume {
+  //   margin: 3rem 0;
+  //   text-align: center;
+  // }
 }
