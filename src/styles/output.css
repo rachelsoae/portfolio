@@ -584,5 +584,19 @@ article {
     margin: 0.5rem;
   }
 }
+.redirect {
+  color: #47725d;
+  font-family: "Inter", sans-serif;
+  color: #424242;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 3rem;
+  text-decoration: none;
+}
+
+.redirect:hover {
+  text-decoration: underline;
+  text-decoration-color: #47725d;
+}
 
 /*# sourceMappingURL=output.css.map */

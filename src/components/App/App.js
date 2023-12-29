@@ -7,13 +7,14 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
+import Error from '../Error/Error';
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className='app'>
-        {isOpen ?
+      {isOpen ?
         <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
         :
         <>
@@ -25,7 +26,7 @@ const App = () => {
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/portfolio' element={<Portfolio />} />
-                <Route path='/error' />
+                <Route path='/*' element={<Error />} />
               </Routes>
             </div>
           </main>

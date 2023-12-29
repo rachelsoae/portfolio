@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.redirect {
+  color: $primary-accent-color;
+  @include body-font;
+  margin: 3rem;
+  text-decoration: none;
+}
+
+.redirect:hover {
+  @include inline-link-hover;
+}
