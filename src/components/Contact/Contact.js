@@ -4,7 +4,7 @@ import github from '../../assets/icons/github.png';
 const Contact = () => {
   return (
     <div className='contact'>
-      <h2 className='page-header'>Contact</h2>
+      <h1 className='page-header'>Contact</h1>
       <div className='contact__email-container'>
         <p>Email me at</p>
         <a href='mailto:rachelprather1@gmail.com'>

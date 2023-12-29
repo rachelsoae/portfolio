@@ -6,7 +6,7 @@ const Home = () => {
     <div className='hero'>
       <div className='hero__text-container'>
         <section className='hero__text-wrapper'>
-          <h2>Software Engineer & Web Developer</h2>
+          <h1>Software Engineer & Web Developer</h1>
           <p> Building technology that builds community. Let’s create something meaningful together.</p>
           <div className='hero__buttons-container'>
             <Link to='/contact'>
