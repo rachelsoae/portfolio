@@ -73,25 +73,6 @@ button:hover,
   font-size: 3rem;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  margin: 3rem;
-}
-
-#menu__exit {
-  align-self: flex-end;
-}
-
-.menu__buttons {
-  @include center-column;
-}
-
-.menu__button {
-  margin: 1rem;
-}
 @keyframes button-fade {
   to {
     @include button-hover;

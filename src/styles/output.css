@@ -138,28 +138,6 @@ button:hover,
   font-size: 3rem;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-  margin: 3rem;
-}
-
-#menu__exit {
-  align-self: flex-end;
-}
-
-.menu__buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu__button {
-  margin: 1rem;
-}
-
 @keyframes button-fade {
   to {
     background-color: #8eba9e;
@@ -605,6 +583,20 @@ article {
   .footer__link {
     margin: 0.5rem;
   }
+}
+.redirect {
+  color: #47725d;
+  font-family: "Inter", sans-serif;
+  color: #424242;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 3rem;
+  text-decoration: none;
+}
+
+.redirect:hover {
+  text-decoration: underline;
+  text-decoration-color: #47725d;
 }
 
 /*# sourceMappingURL=output.css.map */
