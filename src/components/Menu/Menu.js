@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 const Menu = ({isOpen, setIsOpen}) => {
   return (
     <nav className='menu'>
-      <span class='material-symbols-rounded' id='menu__exit' onClick={() => setIsOpen(!isOpen)}>
+      <span className='material-symbols-rounded' id='menu__exit' onClick={() => setIsOpen(!isOpen)}>
         close
       </span>
       <div className='top-nav__buttons menu__buttons'>

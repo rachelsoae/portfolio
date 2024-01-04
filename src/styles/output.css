@@ -372,6 +372,28 @@ button:hover,
     width: 20rem;
   }
 }
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  margin: 3rem;
+}
+
+#menu__exit {
+  align-self: flex-end;
+}
+
+.menu__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__button {
+  margin: 1rem;
+}
+
 .portfolio {
   margin: 12rem 0 0;
   display: flex;
