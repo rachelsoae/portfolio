@@ -24,7 +24,7 @@ const Nav = ({isOpen, setIsOpen}) => {
             isBurger === true ? 
             <span 
               className='material-symbols-rounded' 
-              id='menu__burger' 
+              id='menu__open' 
               onClick={() => setIsOpen(!isOpen)}
             >
               menu
