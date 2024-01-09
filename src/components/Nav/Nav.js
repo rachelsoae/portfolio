@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
 import logo from '../../assets/logo.png'
-import BurgerNav from '../BurgerNav/BurgerNav';
 import TopNav from '../TopNav/TopNav';
 
 const Nav = ({isOpen, setIsOpen}) => {
@@ -21,7 +20,18 @@ const Nav = ({isOpen, setIsOpen}) => {
           <img src={logo} id='logo' alt='Rachel Soae Prather, Software Engineer' />
         </Link>
         <div className='top-nav__buttons'>
-          {isBurger === true ? <BurgerNav isOpen={isOpen} setIsOpen={setIsOpen} /> : <TopNav />}
+          {
+            isBurger === true ? 
+            <span 
+              className='material-symbols-rounded' 
+              id='menu__burger' 
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              menu
+            </span> 
+            : 
+            <TopNav />
+          }
         </div>
       </div>
     </nav>
