@@ -22,6 +22,7 @@ const Home = () => {
         <img 
           src={philomena} 
           alt='a fiddle-leaf fig grows skyward against an off-white backdrop'
+          id='philomena'
         />
       </div>   
     </div>
