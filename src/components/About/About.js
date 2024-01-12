@@ -16,7 +16,7 @@ const About = () => {
             Hello! 👋 My name is Rachel Soae Prather. I'm a Korean-American Software Engineer and Web Developer located outside Portland, Oregon.
           </p>
           <p>
-            My mission is to Build Technology that Builds Community. In service of that mission, I work and volunteer with ethical organizations whose missions I strongly believe in. I am currently associated with Rita XYZ, Lesbians Who Tech & Allies, Out In Tech, Girls Who Code, and PDXWIT.
+            My mission is to build technology that builds community. In service of that mission, I work and volunteer with ethical organizations whose missions I strongly believe in. I am currently associated with Rita XYZ, PDX Women In Tech, Girls Who Code, Out In Tech, and Lesbians Who Tech & Allies.
           </p>
           <p>
             In my downtime, I can be found eating kimchi, searching for the best honey at the farmer's market, and making music with friends.
