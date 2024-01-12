@@ -12,10 +12,10 @@ const Contact = () => {
         </a>
       </div>
       <div className='contact__socials-container'>
-        <a href='https://www.linkedin.com/in/rachel-soae-prather'>
+        <a href='https://www.linkedin.com/in/rachel-soae-prather' target='_blank'>
           <img className='contact__social' src={linkedin} alt='LinkedIn' />
         </a>
-        <a href='https://github.com/rachelsoae'>
+        <a href='https://github.com/rachelsoae' target='_blank'>
           <img className='contact__social' src={github} alt='GitHub' />
         </a>
       </div>

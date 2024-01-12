@@ -64,22 +64,22 @@ const Project = ({project}) => {
         </div>
         {name === 'Humor Me' ?
           <div className='project__buttons-container'>
-            <a href={deployedLink}>
+            <a href={deployedLink} target='_blank'>
               <button className='primary-button card__button'>View Live</button>
             </a>
-            <a href={repoLinkFE}>
+            <a href={repoLinkFE} target='_blank'>
               <button className='primary-button card__button'>GitHub (FE)</button>
             </a>
-            <a href={repoLinkBE}>
+            <a href={repoLinkBE} target='_blank'>
               <button className='primary-button card__button'>GitHub (BE)</button>
             </a>
           </div>
           :
           <div className='project__buttons-container'>
-            <a href={deployedLink}>
+            <a href={deployedLink} target='_blank'>
               <button className='primary-button card__button'>View Live</button>
             </a>
-            <a href={repoLink}>
+            <a href={repoLink} target='_blank'>
               <button className='primary-button card__button'>GitHub</button>
             </a>
           </div> 
