@@ -24,7 +24,7 @@ const ICONS = {
 }
 
 const Project = ({project}) => {
-  const {id, name, tagline, techs, repoLink, repoLinkFE, repoLinkBE, deployedLink, img} = project;
+  const {name, tagline, techs, repoLink, repoLinkFE, repoLinkBE, deployedLink, img} = project;
 
   const [isFront, setIsFront] = useState(true)
 
@@ -64,22 +64,22 @@ const Project = ({project}) => {
         </div>
         {name === 'Humor Me' ?
           <div className='project__buttons-container'>
-            <a href={deployedLink} target='_blank'>
+            <a href={deployedLink} target='_blank' rel="noopener noreferrer">
               <button className='primary-button card__button'>View Live</button>
             </a>
-            <a href={repoLinkFE} target='_blank'>
+            <a href={repoLinkFE} target='_blank' rel="noopener noreferrer">
               <button className='primary-button card__button'>GitHub (FE)</button>
             </a>
-            <a href={repoLinkBE} target='_blank'>
+            <a href={repoLinkBE} target='_blank' rel="noopener noreferrer">
               <button className='primary-button card__button'>GitHub (BE)</button>
             </a>
           </div>
           :
           <div className='project__buttons-container'>
-            <a href={deployedLink} target='_blank'>
+            <a href={deployedLink} target='_blank' rel="noopener noreferrer">
               <button className='primary-button card__button'>View Live</button>
             </a>
-            <a href={repoLink} target='_blank'>
+            <a href={repoLink} target='_blank' rel="noopener noreferrer">
               <button className='primary-button card__button'>GitHub</button>
             </a>
           </div> 

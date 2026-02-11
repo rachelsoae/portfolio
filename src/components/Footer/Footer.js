@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <section className='footer'>
       <div className='footer__socials'>
-        <a href='https://www.linkedin.com/in/rachel-soae-prather' target='_blank'>
+        <a href='https://www.linkedin.com/in/rachel-soae-prather' target='_blank' rel="noopener noreferrer">
           <img className='footer__social' src={linkedin} alt='LinkedIn' />
         </a>
-        <a href='https://github.com/rachelsoae' target='_blank'>
+        <a href='https://github.com/rachelsoae' target='_blank' rel="noopener noreferrer">
           <img className='footer__social' src={github} alt='GitHub' />
         </a>
       </div>
