@@ -90,6 +90,13 @@ h1 {
   margin: 3rem;
 }
 
+.page-subheader {
+  font-family: "Inter", sans-serif;
+  color: #424242;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
 p {
   font-family: "Inter", sans-serif;
   color: #424242;

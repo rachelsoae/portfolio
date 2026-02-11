@@ -1,19 +1,19 @@
 import Project from '../Project/Project'
 import dndpreview from '../../assets/dndpreview.png';
-import everusepreview from '../../assets/everusepreview.png';
-import humormepreview from '../../assets/humormepreview.png';
+// import everusepreview from '../../assets/everusepreview.png';
+// import humormepreview from '../../assets/humormepreview.png';
 
 const Portfolio = () => {
   const PROJECTS = [
-    {
-      id: 1,
-      name: 'EverUse',
-      tagline: 'This product-focused e-commerce app was built for the small sustainability business EverUse Upcycled Products.',
-      techs: ['JavaScript', 'React', 'Sass', 'Cypress', 'GraphQL', 'GitHub Actions'],
-      repoLink: 'https://github.com/JamieCaudill/EverUse-FE-Vercel',
-      deployedLink: 'https://everuse-fe.vercel.app',
-      img: everusepreview
-    },
+    // {
+    //   id: 1,
+    //   name: 'EverUse',
+    //   tagline: 'This product-focused e-commerce app was built for the small sustainability business EverUse Upcycled Products.',
+    //   techs: ['JavaScript', 'React', 'Sass', 'Cypress', 'GraphQL', 'GitHub Actions'],
+    //   repoLink: 'https://github.com/JamieCaudill/EverUse-FE-Vercel',
+    //   deployedLink: 'https://everuse-fe.vercel.app',
+    //   img: everusepreview
+    // },
     {
       id: 2,
       name: 'D&D : The Rookie\'s Roadmap',
@@ -23,16 +23,16 @@ const Portfolio = () => {
       deployedLink: 'http://dnd-rookie-roadmap.vercel.app',
       img: dndpreview
     },
-    {
-      id: 3,
-      name: 'Humor Me',
-      tagline: 'A full-stack app centered around self-teaching PERN development.',
-      techs: ['JavaScript', 'React', 'CSS', 'Cypress', 'Express', 'Knex', 'PostgreSQL'],
-      repoLinkFE: 'https://github.com/rachelsoae/humor-me-ui',
-      repoLinkBE: 'https://github.com/rachelsoae/humor-me-be',
-      deployedLink: 'http://humor-me-ui.vercel.app',
-      img: humormepreview
-    }
+    // {
+    //   id: 3,
+    //   name: 'Humor Me',
+    //   tagline: 'A full-stack app centered around self-teaching PERN development.',
+    //   techs: ['JavaScript', 'React', 'CSS', 'Cypress', 'Express', 'Knex', 'PostgreSQL'],
+    //   repoLinkFE: 'https://github.com/rachelsoae/humor-me-ui',
+    //   repoLinkBE: 'https://github.com/rachelsoae/humor-me-be',
+    //   deployedLink: 'http://humor-me-ui.vercel.app',
+    //   img: humormepreview
+    // }
     // overlook: {
     //   id: 4,
     //   name: 'Overlook',
@@ -44,6 +44,7 @@ const Portfolio = () => {
   return (
     <div className='portfolio'>
       <h1 className='page-header'>Portfolio</h1>
+      <h2 className='page-subheader'>Updates coming soon!</h2>
       <section className='portfolio__projects'>
         {PROJECTS.map(project => <Project key={project.id} project={project} />)}
       </section>

@@ -35,11 +35,6 @@
   @include inline-link-hover;
 }
 
-// .about__resume {
-//   margin: 6rem;
-//   text-align: center;
-// }
-
 @media screen and (max-width: 600px) {
   .about__content {
     flex-wrap: wrap;
@@ -51,8 +46,4 @@
     width: 90%;
     text-align: center;
   }
-  // .about__resume {
-  //   margin: 3rem 0;
-  //   text-align: center;
-  // }
 }

@@ -1,9 +1,10 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
+
 .portfolio {
   margin: 12rem 0 0;
-  @include center-column;
+  @include center-column;  
   .portfolio__projects {
     @include space-evenly;
     width: 100%;
